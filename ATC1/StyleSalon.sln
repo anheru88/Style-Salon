@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "StyleSalon", "ATC\StyleSalon.vbproj", "{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstallerSalonStyle", "InstallerSalonStyle\InstallerSalonStyle.vdproj", "{7A82D0DE-844C-4106-AF22-E39FCB019A82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Debug|x86.ActiveCfg = Debug|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Debug|x86.Build.0 = Debug|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Release|Any CPU.ActiveCfg = Release|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Release|x86.ActiveCfg = Release|x86
+		{B6045700-7A2D-47CF-8FCC-DA8ADEB39605}.Release|x86.Build.0 = Release|x86
+		{7A82D0DE-844C-4106-AF22-E39FCB019A82}.Debug|Any CPU.ActiveCfg = Debug
+		{7A82D0DE-844C-4106-AF22-E39FCB019A82}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{7A82D0DE-844C-4106-AF22-E39FCB019A82}.Debug|Mixed Platforms.Build.0 = Debug
+		{7A82D0DE-844C-4106-AF22-E39FCB019A82}.Debug|x86.ActiveCfg = Debug
+		{7A82D0DE-844C-4106-AF22-E39FCB019A82}.Release|Any CPU.ActiveCfg = Release
+		{7A82D0DE-844C-4106-AF22-E39FCB019A82}.Release|Mixed Platforms.ActiveCfg = Release
+		{7A82D0DE-844C-4106-AF22-E39FCB019A82}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
