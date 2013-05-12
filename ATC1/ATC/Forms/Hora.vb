@@ -1,6 +1,8 @@
 ﻿Public Class Hora
 
-    Public time As TimeSpan
+    Private time, time2 As TimeSpan
+    Private id, id_empleado, id_cliente, id_servicio As Integer
+    Private fecha As Date
 
     Public Sub New()
 
@@ -25,5 +27,20 @@
         InitializeComponent()
         Me.Label_Hora.Text = FormatDateTime("01/01/1990" & t.ToString, DateFormat.ShortTime)
         Me.Label_Texto.Text = c
+    End Sub
+
+    Private Sub Label_Texto_Click(sender As System.Object, e As System.EventArgs) Handles Label_Texto.Click
+        If Label_Texto.Text <> "" Then
+            Main.LoadScreen(New Agregar_Cita(id, id_empleado, id_cliente, id_servicio, fecha, time2), MoveDirection.Out)
+        End If
+    End Sub
+
+    Public Sub llenar_datos(Id As Integer, Empleado_Id As Integer, Cliente_Id As Integer, Servicio_Id As Integer, Fecha As Date, hora As TimeSpan)
+        Me.id = Id
+        Me.id_empleado = Empleado_Id
+        Me.id_cliente = Cliente_Id
+        Me.id_servicio = Servicio_Id
+        Me.fecha = Fecha
+        Me.time2 = hora
     End Sub
 End Class

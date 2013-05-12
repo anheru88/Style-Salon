@@ -42,11 +42,10 @@ Partial Class Calendario
         Me.Back_Boton = New System.Windows.Forms.PictureBox()
         Me.MonthCalendar = New System.Windows.Forms.MonthCalendar()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.CalendarioAddBtn = New System.Windows.Forms.Button()
         Me.TableAdapterManager = New StyleSalon.ATCDataSetTableAdapters.TableAdapterManager()
         Me.AgendaTableAdapter = New StyleSalon.ATCDataSetTableAdapters.AgendaTableAdapter()
         Me.EmpleadosTableAdapter = New StyleSalon.ATCDataSetTableAdapters.EmpleadosTableAdapter()
-        Me.ButtonNuevoServicio = New System.Windows.Forms.Button()
-        Me.ButtonNuevoCliente = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -68,7 +67,7 @@ Partial Class Calendario
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1081, 778)
+        Me.Panel1.Size = New System.Drawing.Size(994, 778)
         Me.Panel1.TabIndex = 0
         '
         'Panel5
@@ -80,7 +79,7 @@ Partial Class Calendario
         Me.Panel5.Controls.Add(Me.Horario)
         Me.Panel5.Location = New System.Drawing.Point(482, 86)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(530, 508)
+        Me.Panel5.Size = New System.Drawing.Size(448, 508)
         Me.Panel5.TabIndex = 4
         Me.Panel5.Tag = ""
         '
@@ -132,7 +131,7 @@ Partial Class Calendario
         Me.Horario.AutoSize = True
         Me.Horario.Location = New System.Drawing.Point(3, 96)
         Me.Horario.Name = "Horario"
-        Me.Horario.Size = New System.Drawing.Size(524, 409)
+        Me.Horario.Size = New System.Drawing.Size(442, 409)
         Me.Horario.TabIndex = 24
         '
         'Panel4
@@ -258,12 +257,34 @@ Partial Class Calendario
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.ButtonNuevoServicio)
-        Me.Panel2.Controls.Add(Me.ButtonNuevoCliente)
+        Me.Panel2.Controls.Add(Me.CalendarioAddBtn)
         Me.Panel2.Location = New System.Drawing.Point(3, 613)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1006, 128)
+        Me.Panel2.Size = New System.Drawing.Size(924, 104)
         Me.Panel2.TabIndex = 1
+        '
+        'CalendarioAddBtn
+        '
+        Me.CalendarioAddBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.CalendarioAddBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CalendarioAddBtn.Dock = System.Windows.Forms.DockStyle.Right
+        Me.CalendarioAddBtn.FlatAppearance.BorderSize = 0
+        Me.CalendarioAddBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.CalendarioAddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CalendarioAddBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CalendarioAddBtn.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.CalendarioAddBtn.Image = Global.StyleSalon.My.Resources.Resources.add
+        Me.CalendarioAddBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CalendarioAddBtn.Location = New System.Drawing.Point(845, 0)
+        Me.CalendarioAddBtn.Margin = New System.Windows.Forms.Padding(5)
+        Me.CalendarioAddBtn.Name = "CalendarioAddBtn"
+        Me.CalendarioAddBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.CalendarioAddBtn.Size = New System.Drawing.Size(79, 104)
+        Me.CalendarioAddBtn.TabIndex = 28
+        Me.CalendarioAddBtn.Tag = "5"
+        Me.CalendarioAddBtn.Text = "Agregar Evento"
+        Me.CalendarioAddBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CalendarioAddBtn.UseVisualStyleBackColor = True
         '
         'TableAdapterManager
         '
@@ -283,56 +304,10 @@ Partial Class Calendario
         '
         Me.EmpleadosTableAdapter.ClearBeforeFill = True
         '
-        'ButtonNuevoServicio
-        '
-        Me.ButtonNuevoServicio.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.ButtonNuevoServicio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonNuevoServicio.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonNuevoServicio.FlatAppearance.BorderSize = 0
-        Me.ButtonNuevoServicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.ButtonNuevoServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonNuevoServicio.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ButtonNuevoServicio.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.ButtonNuevoServicio.Image = CType(resources.GetObject("ButtonNuevoServicio.Image"), System.Drawing.Image)
-        Me.ButtonNuevoServicio.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.ButtonNuevoServicio.Location = New System.Drawing.Point(79, 0)
-        Me.ButtonNuevoServicio.Margin = New System.Windows.Forms.Padding(5)
-        Me.ButtonNuevoServicio.Name = "ButtonNuevoServicio"
-        Me.ButtonNuevoServicio.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
-        Me.ButtonNuevoServicio.Size = New System.Drawing.Size(79, 128)
-        Me.ButtonNuevoServicio.TabIndex = 27
-        Me.ButtonNuevoServicio.Tag = "5"
-        Me.ButtonNuevoServicio.Text = "Nuevo Servicio"
-        Me.ButtonNuevoServicio.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.ButtonNuevoServicio.UseVisualStyleBackColor = False
-        '
-        'ButtonNuevoCliente
-        '
-        Me.ButtonNuevoCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.ButtonNuevoCliente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonNuevoCliente.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonNuevoCliente.FlatAppearance.BorderSize = 0
-        Me.ButtonNuevoCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.ButtonNuevoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonNuevoCliente.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ButtonNuevoCliente.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.ButtonNuevoCliente.Image = CType(resources.GetObject("ButtonNuevoCliente.Image"), System.Drawing.Image)
-        Me.ButtonNuevoCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.ButtonNuevoCliente.Location = New System.Drawing.Point(0, 0)
-        Me.ButtonNuevoCliente.Margin = New System.Windows.Forms.Padding(5)
-        Me.ButtonNuevoCliente.Name = "ButtonNuevoCliente"
-        Me.ButtonNuevoCliente.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
-        Me.ButtonNuevoCliente.Size = New System.Drawing.Size(79, 128)
-        Me.ButtonNuevoCliente.TabIndex = 26
-        Me.ButtonNuevoCliente.Tag = "5"
-        Me.ButtonNuevoCliente.Text = "Nuevo Cliente"
-        Me.ButtonNuevoCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.ButtonNuevoCliente.UseVisualStyleBackColor = False
-        '
         'Calendario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(1083, 780)
+        Me.ClientSize = New System.Drawing.Size(996, 780)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Calendario"
@@ -375,7 +350,6 @@ Partial Class Calendario
     Friend WithEvents Horario As System.Windows.Forms.Panel
     Friend WithEvents Id As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NombreDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ButtonNuevoServicio As System.Windows.Forms.Button
-    Friend WithEvents ButtonNuevoCliente As System.Windows.Forms.Button
+    Friend WithEvents CalendarioAddBtn As System.Windows.Forms.Button
 
 End Class

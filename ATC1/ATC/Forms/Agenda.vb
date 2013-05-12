@@ -49,7 +49,7 @@
             Me.SplitContainer1.Panel1Collapsed = True
             Me.SplitContainer2.Panel1Collapsed = True
             AgendaBindingSource.AddNew()
-            Me.AgendaBindingSource.Current!Tiempo = 15
+            'Me.AgendaBindingSource.Current!Tiempo = 15
             Me.AgendaBindingSource.Current!Fecha = vg_lastDate
             Me.ClientesBindingSource.Position = -1
             HoraDateTimePicker.Value = CDate("01/01/1900 " & vg_lasttime.ToString)

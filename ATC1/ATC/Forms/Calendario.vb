@@ -23,7 +23,7 @@
         Me.Label_Empleado.Text = ""
         Cargar_Calendario()
         Cargar_Horario()
-
+        Grilla_Empleado()
     End Sub
     Protected Overrides Sub Finalize()
         MyBase.Finalize()
@@ -43,12 +43,7 @@
   
 
     Private Sub EmpleadosDataGridView_CellClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles EmpleadosDataGridView.CellClick
-        Label_Empleado.Text = EmpleadosDataGridView.CurrentCell.Value
-        filaseleccionada = Convert.ToInt32(Me.EmpleadosDataGridView.CurrentRow.Index)
-
-        IdentEmpleado = Me.EmpleadosDataGridView.Item("Id", filaseleccionada).Value
-
-        Cargar_Horario(Fecha_Label.Text, IdentEmpleado)
+        Grilla_Empleado()
 
     End Sub
     Private Sub Cargar_Calendario()
@@ -67,8 +62,6 @@
             Me.Horario.Controls.Add(cita)
             cita.Show()
         Next
-        'Dim cita2 As Hora = Me.Horario.Controls.Item(3)
-        'MsgBox(cita2.Label_Hora.Text)
     End Sub
 
     Private Sub Cargar_Horario(dia As String, empleado As Integer)
@@ -115,8 +108,33 @@
             End Select
 
             cita2.Label_Texto.Text = cita.NombreServicio.ToString() + " Con " + cita.Nombre.ToString()
+            cita2.llenar_datos(cita.Id, cita.Empleado, cita.Cliente, cita.Servicio, cita.Fecha, cita.Hora)
+
 
         Next
+
+    End Sub
+
+    Private Sub Grilla_Empleado()
+        Try
+            Label_Empleado.Text = EmpleadosDataGridView.CurrentCell.Value
+            filaseleccionada = Convert.ToInt32(Me.EmpleadosDataGridView.CurrentRow.Index)
+
+            IdentEmpleado = Me.EmpleadosDataGridView.Item("Id", filaseleccionada).Value
+
+            Cargar_Horario(Fecha_Label.Text, IdentEmpleado)
+        Catch ex As Exception
+            IdentEmpleado = -2
+        End Try
+       
+    End Sub
+    Private Sub CalendarioAddBtn_Click(sender As System.Object, e As System.EventArgs) Handles CalendarioAddBtn.Click
+        If IdentEmpleado <> -2 Then
+            Main.LoadScreen(New Agregar_Cita(Convert.ToInt32(IdentEmpleado) - 1, Me.MonthCalendar.SelectionRange.Start), MoveDirection.Out)
+        Else
+            Main.LoadScreen(New Agregar_Cita(), MoveDirection.Out)
+        End If
+
 
     End Sub
 End Class

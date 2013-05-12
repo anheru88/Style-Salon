@@ -139,6 +139,12 @@
     <Compile Include="Forms\Calendario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Agregar_Cita.Designer.vb">
+      <DependentUpon>Agregar_Cita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Agregar_Cita.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Empleados.Designer.vb">
       <DependentUpon>Empleados.vb</DependentUpon>
     </Compile>
@@ -227,6 +233,9 @@
     <EmbeddedResource Include="Forms\Calendario.resx">
       <DependentUpon>Calendario.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Agregar_Cita.resx">
+      <DependentUpon>Agregar_Cita.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Empleados.resx">
       <DependentUpon>Empleados.vb</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +280,7 @@
     <None Include="ATCDataSet.xss">
       <DependentUpon>ATCDataSet.xsd</DependentUpon>
     </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
