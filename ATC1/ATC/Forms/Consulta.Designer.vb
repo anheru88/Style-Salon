@@ -29,13 +29,13 @@ Partial Class Consulta
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -117,6 +117,14 @@ Partial Class Consulta
         Me.Panel2.Size = New System.Drawing.Size(283, 403)
         Me.Panel2.TabIndex = 7
         '
+        'Panel7
+        '
+        Me.Panel7.AutoScroll = True
+        Me.Panel7.Location = New System.Drawing.Point(0, 60)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(283, 343)
+        Me.Panel7.TabIndex = 2
+        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonFace
@@ -148,6 +156,16 @@ Partial Class Consulta
         Me.Panel3.Size = New System.Drawing.Size(276, 403)
         Me.Panel3.TabIndex = 7
         '
+        'Label5
+        '
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(3, 71)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(268, 92)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Servicio de Pedicure al Sr(a) Aura Luz Mendoza Atendido Por Rodney Lafaurie." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Pro" & _
+    "gramado para las 08:00:00"
+        '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonFace
@@ -169,24 +187,6 @@ Partial Class Consulta
         Me.Label4.Text = "Detalle"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel7
-        '
-        Me.Panel7.AutoScroll = True
-        Me.Panel7.Location = New System.Drawing.Point(0, 60)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(283, 343)
-        Me.Panel7.TabIndex = 2
-        '
-        'Label5
-        '
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(3, 71)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(268, 92)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Servicio de Pedicure al Sr(a) Aura Luz Mendoza Atendido Por Rodney Lafaurie." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Pro" & _
-    "gramado para las 08:00:00"
-        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(542, 4)
@@ -201,7 +201,7 @@ Partial Class Consulta
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(897, 461)
+        Me.ClientSize = New System.Drawing.Size(897, 585)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
