@@ -54,7 +54,7 @@ Public Class Consulta_General
 
     End Sub
 
-    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click, DateTimePicker1.ValueChanged
         ds.Clear()
         For Each celda As DataGridViewRow In DataGridView1.Rows
             Dim po As Integer = 0

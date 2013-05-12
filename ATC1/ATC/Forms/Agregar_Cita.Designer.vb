@@ -227,7 +227,7 @@ Partial Class Agregar_Cita
         Me.Panel2.Controls.Add(FechaLabel1)
         Me.Panel2.Location = New System.Drawing.Point(86, 121)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(739, 457)
+        Me.Panel2.Size = New System.Drawing.Size(755, 457)
         Me.Panel2.TabIndex = 35
         '
         'Label_Mensaje
@@ -253,7 +253,7 @@ Partial Class Agregar_Cita
         Me.HoraDateTimePicker.Location = New System.Drawing.Point(161, 139)
         Me.HoraDateTimePicker.Name = "HoraDateTimePicker"
         Me.HoraDateTimePicker.ShowUpDown = True
-        Me.HoraDateTimePicker.Size = New System.Drawing.Size(500, 35)
+        Me.HoraDateTimePicker.Size = New System.Drawing.Size(516, 35)
         Me.HoraDateTimePicker.TabIndex = 31
         '
         'IdTextBox1
@@ -288,7 +288,7 @@ Partial Class Agregar_Cita
         Me.ServicioComboBox.FormattingEnabled = True
         Me.ServicioComboBox.Location = New System.Drawing.Point(162, 266)
         Me.ServicioComboBox.Name = "ServicioComboBox"
-        Me.ServicioComboBox.Size = New System.Drawing.Size(500, 37)
+        Me.ServicioComboBox.Size = New System.Drawing.Size(516, 37)
         Me.ServicioComboBox.TabIndex = 26
         Me.ServicioComboBox.ValueMember = "Id"
         '
@@ -320,7 +320,7 @@ Partial Class Agregar_Cita
         Me.EmpleadosComboBox.FormattingEnabled = True
         Me.EmpleadosComboBox.Location = New System.Drawing.Point(161, 223)
         Me.EmpleadosComboBox.Name = "EmpleadosComboBox"
-        Me.EmpleadosComboBox.Size = New System.Drawing.Size(500, 37)
+        Me.EmpleadosComboBox.Size = New System.Drawing.Size(516, 37)
         Me.EmpleadosComboBox.TabIndex = 25
         Me.EmpleadosComboBox.ValueMember = "Id"
         '
@@ -342,7 +342,7 @@ Partial Class Agregar_Cita
         Me.ClienteComboBox.FormattingEnabled = True
         Me.ClienteComboBox.Location = New System.Drawing.Point(161, 180)
         Me.ClienteComboBox.Name = "ClienteComboBox"
-        Me.ClienteComboBox.Size = New System.Drawing.Size(500, 37)
+        Me.ClienteComboBox.Size = New System.Drawing.Size(516, 37)
         Me.ClienteComboBox.TabIndex = 24
         Me.ClienteComboBox.ValueMember = "Id"
         '
@@ -360,7 +360,7 @@ Partial Class Agregar_Cita
         Me.FechaDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.FechaDateTimePicker1.Location = New System.Drawing.Point(161, 98)
         Me.FechaDateTimePicker1.Name = "FechaDateTimePicker1"
-        Me.FechaDateTimePicker1.Size = New System.Drawing.Size(500, 35)
+        Me.FechaDateTimePicker1.Size = New System.Drawing.Size(516, 35)
         Me.FechaDateTimePicker1.TabIndex = 16
         '
         'Panel1
@@ -372,7 +372,7 @@ Partial Class Agregar_Cita
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1000, 778)
+        Me.Panel1.Size = New System.Drawing.Size(1016, 778)
         Me.Panel1.TabIndex = 0
         '
         'ClientesTableAdapter
@@ -404,7 +404,7 @@ Partial Class Agregar_Cita
         'Agregar_Cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(1002, 780)
+        Me.ClientSize = New System.Drawing.Size(1018, 780)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Agregar_Cita"

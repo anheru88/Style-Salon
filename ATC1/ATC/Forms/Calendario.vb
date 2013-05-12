@@ -67,6 +67,7 @@
     Private Sub Cargar_Horario(dia As String, empleado As Integer)
         For Each Control As Hora In Me.Horario.Controls
             Control.Label_Texto.Text = ""
+            Control.llenar_datos(empleado, "" + dia.ToString())
         Next
 
         cita_empleado_dia = AgendaTableAdapter.GetDataByDiaEmpleado("" + dia.ToString(), empleado).ToList()
@@ -109,8 +110,6 @@
 
             cita2.Label_Texto.Text = cita.NombreServicio.ToString() + " Con " + cita.Nombre.ToString()
             cita2.llenar_datos(cita.Id, cita.Empleado, cita.Cliente, cita.Servicio, cita.Fecha, cita.Hora)
-
-
         Next
 
     End Sub
@@ -136,5 +135,13 @@
         End If
 
 
+    End Sub
+
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+        Main.LoadScreen(New Servicios(-1, Me), MoveDirection.BackIn)
+    End Sub
+
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        Main.LoadScreen(New Clientes(-1, Me), MoveDirection.BackIn)
     End Sub
 End Class

@@ -47,7 +47,7 @@
     Private Sub usersBackBtn_Click(sender As Object, e As EventArgs) Handles usersBackBtn.Click
         If t_origen IsNot Nothing Then
             vg_showCalendar = False
-            Main.LoadScreen(New Agenda(), MoveDirection.Out)
+            Main.LoadScreen(New Calendario(), MoveDirection.Out)
         Else
             If t_edditing Then
                 Main.LoadScreen(New Clientes, MoveDirection.Out)
