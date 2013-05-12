@@ -31,10 +31,13 @@
     End Sub
     Public Sub New(Empleado_Id As Integer, Fecha As Date, hora As TimeSpan)
         Me.New()
-        Me.EmpleadosComboBox.SelectedIndex = Empleado_Id - 1
-        Me.FechaDateTimePicker1.Value = Fecha
-        Me.HoraDateTimePicker.Value = New Date(Now.Year, Now.Month, Now.Day, hora.Hours, hora.Minutes, 0)
-
+        Try
+            Me.EmpleadosComboBox.SelectedIndex = Empleado_Id - 1
+            Me.FechaDateTimePicker1.Value = Fecha
+            Me.HoraDateTimePicker.Value = New Date(Now.Year, Now.Month, Now.Day, hora.Hours, hora.Minutes, 0)
+        Catch ex As Exception
+            'System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
     End Sub
 
     Public Sub New(id As Integer, Empleado_Id As Integer, Cliente_Id As Integer, Servicio_Id As Integer, Fecha As Date, hora As TimeSpan)

@@ -56,7 +56,12 @@
         If Label_Texto.Text <> "" Then
             Main.LoadScreen(New Agregar_Cita(id, id_empleado, id_cliente, id_servicio, fecha, time2), MoveDirection.Out)
         Else
+            If Me.fecha < New System.DateTime(Date.Now.Year, Date.Now.Month, Date.Now.Day) Then
+                Me.fecha = New System.DateTime(Date.Now.Year, Date.Now.Month, Date.Now.Day)
+            End If
+
             Main.LoadScreen(New Agregar_Cita(Me.id_empleado, Me.fecha, Me.time), MoveDirection.Out)
+
             'MsgBox("Id Empleado:" + Me.id_empleado.ToString() + "; Fecha: " + Me.fecha.ToString() + "; Hora: " + Me.time.ToString())
         End If
     End Sub
