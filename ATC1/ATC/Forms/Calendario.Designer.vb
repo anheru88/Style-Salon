@@ -33,7 +33,7 @@ Partial Class Calendario
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.EmpleadosDataGridView = New System.Windows.Forms.DataGridView()
         Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmpleadosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ATCDataSet = New StyleSalon.ATCDataSet()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -69,7 +69,7 @@ Partial Class Calendario
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1050, 778)
+        Me.Panel1.Size = New System.Drawing.Size(940, 720)
         Me.Panel1.TabIndex = 0
         '
         'Panel5
@@ -162,7 +162,7 @@ Partial Class Calendario
         Me.EmpleadosDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.EmpleadosDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.EmpleadosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.EmpleadosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.NombreDataGridViewTextBoxColumn})
+        Me.EmpleadosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.Nombre})
         Me.EmpleadosDataGridView.DataSource = Me.EmpleadosBindingSource
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
@@ -189,12 +189,12 @@ Partial Class Calendario
         Me.Id.ReadOnly = True
         Me.Id.Visible = False
         '
-        'NombreDataGridViewTextBoxColumn
+        'Nombre
         '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        Me.Nombre.DataPropertyName = "Nombre"
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
         '
         'EmpleadosBindingSource
         '
@@ -357,7 +357,7 @@ Partial Class Calendario
         'Calendario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(1052, 780)
+        Me.ClientSize = New System.Drawing.Size(942, 722)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Calendario"
@@ -398,10 +398,10 @@ Partial Class Calendario
     Friend WithEvents EmpleadosBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Horario As System.Windows.Forms.Panel
-    Friend WithEvents Id As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NombreDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CalendarioAddBtn As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Id As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
 
 End Class

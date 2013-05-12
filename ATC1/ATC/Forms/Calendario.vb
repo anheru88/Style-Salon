@@ -2,9 +2,13 @@
 
     Dim t_citas As List(Of ATCDataSet.AgendaRow)
     Dim cita_empleado_dia As List(Of ATCDataSet.AgendaRow)
-    Dim v_fecha As Date = Now
+    Dim fecha_select As Date
     Dim IdentEmpleado As String
     Dim filaseleccionada As Integer
+    Dim row, colum As Integer
+
+
+
     
     Public Sub New()
 
@@ -20,17 +24,31 @@
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
 
+
         Me.Label_Empleado.Text = ""
         Cargar_Calendario()
         Cargar_Horario()
         Grilla_Empleado()
+        row = 0
+        colum = 1
+        fecha_select = Now
+
     End Sub
+
+    Public Sub New(FechaStart As Date, Empleado_row As Integer)
+        Me.New()
+        row = Empleado_row
+        fecha_select = FechaStart
+    End Sub
+
     Protected Overrides Sub Finalize()
         MyBase.Finalize()
     End Sub
+
     Private Sub Back_Boton_Click(sender As System.Object, e As System.EventArgs) Handles Back_Boton.Click
         Main.LoadScreen(New Inicio, MoveDirection.Out)
     End Sub
+
     Private Sub MonthCalendar_DateChanged(sender As System.Object, e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar.DateChanged
         Fecha_Label.Text = CStr(Me.MonthCalendar.SelectionRange.Start)
 
@@ -44,8 +62,8 @@
 
     Private Sub EmpleadosDataGridView_CellClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles EmpleadosDataGridView.CellClick
         Grilla_Empleado()
-
     End Sub
+
     Private Sub Cargar_Calendario()
         For Each cita As ATCDataSet.AgendaRow In t_citas
             Me.MonthCalendar.AddBoldedDate(cita.Fecha)
@@ -127,6 +145,7 @@
         End Try
        
     End Sub
+
     Private Sub CalendarioAddBtn_Click(sender As System.Object, e As System.EventArgs) Handles CalendarioAddBtn.Click
         If IdentEmpleado <> -2 Then
             Main.LoadScreen(New Agregar_Cita(Convert.ToInt32(IdentEmpleado) - 1, Me.MonthCalendar.SelectionRange.Start), MoveDirection.Out)
@@ -144,4 +163,12 @@
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Main.LoadScreen(New Clientes(-1, Me), MoveDirection.BackIn)
     End Sub
+
+
+    Public Sub Seleccionar_DataGridView()
+        Me.EmpleadosDataGridView.CurrentCell = Me.EmpleadosDataGridView(colum, row)
+        Me.MonthCalendar.SetDate(fecha_select)
+        Grilla_Empleado()
+    End Sub
+
 End Class

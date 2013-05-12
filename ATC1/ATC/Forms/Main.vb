@@ -55,6 +55,14 @@ Public Class Main
 
         'SetDock(v_moveInObject)
 
+        'MsgBox(new_screen.GetType().ToString())
+
+        If new_screen.GetType().ToString().Equals("StyleSalon.Calendario") Then
+            Dim c As Calendario = new_screen
+            c.Seleccionar_DataGridView()
+
+        End If
+
     End Sub
 
     Public Sub movePanel(ByVal moveDir As MoveDirection, Optional ByVal newTabIndex As Integer = -1)

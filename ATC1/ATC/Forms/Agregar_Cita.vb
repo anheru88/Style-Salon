@@ -73,10 +73,10 @@
             Try
                 Me.AgendaTableAdapter.Insert(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedIndex + 1), (EmpleadosComboBox.SelectedIndex + 1), (ServicioComboBox.SelectedIndex + 1), TiempoNumericUpDown.Value, "NULL")
                 Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
-                Main.LoadScreen(New Calendario, MoveDirection.BackIn)
+                Main.LoadScreen(New Calendario(FechaDateTimePicker1.Value, EmpleadosComboBox.SelectedIndex), MoveDirection.BackIn)
             Catch ex As Exception
                 Main.ShowMessage("Atención!", "Algo no ha salido bien y no se pudo completar la acción solicitada.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
-                'MsgBox(ex.ToString())
+                MsgBox(ex.ToString())
             End Try
         Else
 
@@ -86,7 +86,7 @@
               
                 Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
 
-                Main.LoadScreen(New Calendario, MoveDirection.BackIn)
+                Main.LoadScreen(New Calendario(FechaDateTimePicker1.Value, EmpleadosComboBox.SelectedIndex), MoveDirection.BackIn)
             Catch ex As Exception
                 Main.ShowMessage("Atención!", "Algo no ha salido bien y no se pudo completar la acción solicitada.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
             End Try
