@@ -125,19 +125,26 @@ Public Class Consulta
         End While
     End Sub
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+        Main.Show()
         Me.Close()
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click, ConsultaAddBtn.Click
         Consulta_General.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Back_Boton_Click(sender As System.Object, e As System.EventArgs) Handles Back_Boton.Click
+        Main.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub CalendarioAddBtn_Click(sender As System.Object, e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Consulta_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
+        Main.Show()
+        Me.Dispose()
     End Sub
 End Class

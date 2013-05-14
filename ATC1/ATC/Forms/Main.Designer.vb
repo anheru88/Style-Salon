@@ -61,10 +61,10 @@ Partial Class Main
         Me.msgBoxPanel.Controls.Add(Me.msgBoxMessage)
         Me.msgBoxPanel.Controls.Add(Me.Panel4)
         Me.msgBoxPanel.Controls.Add(Me.msgBoxTitle)
-        Me.msgBoxPanel.Location = New System.Drawing.Point(0, 324)
+        Me.msgBoxPanel.Location = New System.Drawing.Point(0, 340)
         Me.msgBoxPanel.Name = "msgBoxPanel"
         Me.msgBoxPanel.Padding = New System.Windows.Forms.Padding(70, 20, 50, 10)
-        Me.msgBoxPanel.Size = New System.Drawing.Size(923, 224)
+        Me.msgBoxPanel.Size = New System.Drawing.Size(939, 224)
         Me.msgBoxPanel.TabIndex = 0
         '
         'msgBoxMessage
@@ -75,7 +75,7 @@ Partial Class Main
         Me.msgBoxMessage.Location = New System.Drawing.Point(70, 52)
         Me.msgBoxMessage.Name = "msgBoxMessage"
         Me.msgBoxMessage.Padding = New System.Windows.Forms.Padding(0, 5, 0, 0)
-        Me.msgBoxMessage.Size = New System.Drawing.Size(803, 107)
+        Me.msgBoxMessage.Size = New System.Drawing.Size(819, 107)
         Me.msgBoxMessage.TabIndex = 1
         Me.msgBoxMessage.Text = "message"
         '
@@ -86,7 +86,7 @@ Partial Class Main
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel4.Location = New System.Drawing.Point(70, 159)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(803, 55)
+        Me.Panel4.Size = New System.Drawing.Size(819, 55)
         Me.Panel4.TabIndex = 2
         '
         'FlowLayoutPanel3
@@ -97,7 +97,7 @@ Partial Class Main
         Me.FlowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft
         Me.FlowLayoutPanel3.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
-        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(803, 55)
+        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(819, 55)
         Me.FlowLayoutPanel3.TabIndex = 2
         '
         'msgBoxNoButton
@@ -110,7 +110,7 @@ Partial Class Main
         Me.msgBoxNoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.msgBoxNoButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.msgBoxNoButton.ForeColor = System.Drawing.Color.Black
-        Me.msgBoxNoButton.Location = New System.Drawing.Point(668, 3)
+        Me.msgBoxNoButton.Location = New System.Drawing.Point(684, 3)
         Me.msgBoxNoButton.Name = "msgBoxNoButton"
         Me.msgBoxNoButton.Size = New System.Drawing.Size(132, 49)
         Me.msgBoxNoButton.TabIndex = 1
@@ -128,7 +128,7 @@ Partial Class Main
         Me.msgBoxOkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.msgBoxOkButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.msgBoxOkButton.ForeColor = System.Drawing.Color.Black
-        Me.msgBoxOkButton.Location = New System.Drawing.Point(530, 3)
+        Me.msgBoxOkButton.Location = New System.Drawing.Point(546, 3)
         Me.msgBoxOkButton.Name = "msgBoxOkButton"
         Me.msgBoxOkButton.Size = New System.Drawing.Size(132, 49)
         Me.msgBoxOkButton.TabIndex = 0
@@ -143,7 +143,7 @@ Partial Class Main
         Me.msgBoxTitle.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.msgBoxTitle.Location = New System.Drawing.Point(70, 20)
         Me.msgBoxTitle.Name = "msgBoxTitle"
-        Me.msgBoxTitle.Size = New System.Drawing.Size(803, 32)
+        Me.msgBoxTitle.Size = New System.Drawing.Size(819, 32)
         Me.msgBoxTitle.TabIndex = 0
         Me.msgBoxTitle.Text = "Title"
         '
@@ -152,7 +152,7 @@ Partial Class Main
         Me.Screen.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Screen.Location = New System.Drawing.Point(2, 30)
         Me.Screen.Name = "Screen"
-        Me.Screen.Size = New System.Drawing.Size(923, 716)
+        Me.Screen.Size = New System.Drawing.Size(939, 748)
         Me.Screen.TabIndex = 0
         '
         'msgBoxContainer
@@ -162,7 +162,7 @@ Partial Class Main
         Me.msgBoxContainer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.msgBoxContainer.Location = New System.Drawing.Point(2, 30)
         Me.msgBoxContainer.Name = "msgBoxContainer"
-        Me.msgBoxContainer.Size = New System.Drawing.Size(923, 716)
+        Me.msgBoxContainer.Size = New System.Drawing.Size(939, 748)
         Me.msgBoxContainer.TabIndex = 17
         Me.msgBoxContainer.Visible = False
         '
@@ -173,7 +173,7 @@ Partial Class Main
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(923, 716)
+        Me.PictureBox2.Size = New System.Drawing.Size(939, 748)
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
@@ -181,7 +181,7 @@ Partial Class Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(927, 748)
+        Me.ClientSize = New System.Drawing.Size(943, 780)
         Me.Controls.Add(Me.msgBoxContainer)
         Me.Controls.Add(Me.Screen)
         Me.ForeColor = System.Drawing.Color.Black

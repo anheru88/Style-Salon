@@ -1,5 +1,13 @@
 ﻿Public Class Inicio
 
+    Public Sub New()
+
+        ' Llamada necesaria para el diseñador.
+        InitializeComponent()
+
+        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+
+    End Sub
     Private Sub usersBtn_Click(sender As Object, e As EventArgs) Handles usersBtn.Click
         Main.LoadScreen(New Clientes, MoveDirection.BackIn)
     End Sub
@@ -30,6 +38,7 @@
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
         Consulta.Show()
-        Me.Hide()
+        Main.Hide()
     End Sub
+
 End Class

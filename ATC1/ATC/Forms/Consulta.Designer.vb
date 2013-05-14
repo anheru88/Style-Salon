@@ -22,7 +22,7 @@ Partial Class Consulta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Consulta))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -37,27 +37,25 @@ Partial Class Consulta
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Back_Boton = New System.Windows.Forms.PictureBox()
+        Me.Label_Agenda = New System.Windows.Forms.Label()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ConsultaAddBtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        CType(Me.Back_Boton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel8.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(726, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(158, 36)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Salir"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 21)
+        Me.Label1.Location = New System.Drawing.Point(9, 97)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(114, 13)
         Me.Label1.TabIndex = 3
@@ -66,7 +64,7 @@ Partial Class Consulta
         'DateTimePicker1
         '
         Me.DateTimePicker1.CustomFormat = "yyyy/MM/dd"
-        Me.DateTimePicker1.Location = New System.Drawing.Point(133, 18)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(130, 94)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(213, 20)
         Me.DateTimePicker1.TabIndex = 1
@@ -79,14 +77,14 @@ Partial Class Consulta
         Me.Panel1.Controls.Add(Me.Panel6)
         Me.Panel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel1.Location = New System.Drawing.Point(15, 44)
+        Me.Panel1.Location = New System.Drawing.Point(40, 120)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(295, 405)
         Me.Panel1.TabIndex = 6
         '
         'Panel6
         '
-        Me.Panel6.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Panel6.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Panel6.Controls.Add(Me.Label3)
         Me.Panel6.Location = New System.Drawing.Point(3, 9)
         Me.Panel6.Name = "Panel6"
@@ -112,7 +110,7 @@ Partial Class Consulta
         Me.Panel2.Controls.Add(Me.Panel7)
         Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.ForeColor = System.Drawing.Color.Black
-        Me.Panel2.Location = New System.Drawing.Point(319, 46)
+        Me.Panel2.Location = New System.Drawing.Point(344, 122)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(283, 403)
         Me.Panel2.TabIndex = 7
@@ -127,7 +125,7 @@ Partial Class Consulta
         '
         'Panel4
         '
-        Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Panel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Location = New System.Drawing.Point(3, 7)
         Me.Panel4.Name = "Panel4"
@@ -151,7 +149,7 @@ Partial Class Consulta
         Me.Panel3.BackColor = System.Drawing.Color.White
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.Panel5)
-        Me.Panel3.Location = New System.Drawing.Point(608, 46)
+        Me.Panel3.Location = New System.Drawing.Point(633, 122)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(276, 403)
         Me.Panel3.TabIndex = 7
@@ -168,7 +166,7 @@ Partial Class Consulta
         '
         'Panel5
         '
-        Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Panel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Panel5.Controls.Add(Me.Label4)
         Me.Panel5.Location = New System.Drawing.Point(2, 7)
         Me.Panel5.Name = "Panel5"
@@ -189,19 +187,84 @@ Partial Class Consulta
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(542, 4)
+        Me.Button1.Location = New System.Drawing.Point(539, 80)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(158, 36)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Consulta General"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Back_Boton
+        '
+        Me.Back_Boton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Back_Boton.Image = Global.StyleSalon.My.Resources.Resources.back
+        Me.Back_Boton.Location = New System.Drawing.Point(15, 12)
+        Me.Back_Boton.Name = "Back_Boton"
+        Me.Back_Boton.Size = New System.Drawing.Size(48, 48)
+        Me.Back_Boton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Back_Boton.TabIndex = 9
+        Me.Back_Boton.TabStop = False
+        '
+        'Label_Agenda
+        '
+        Me.Label_Agenda.AutoSize = True
+        Me.Label_Agenda.Font = New System.Drawing.Font("Segoe UI", 27.8!)
+        Me.Label_Agenda.Location = New System.Drawing.Point(73, 12)
+        Me.Label_Agenda.Name = "Label_Agenda"
+        Me.Label_Agenda.Size = New System.Drawing.Size(361, 51)
+        Me.Label_Agenda.TabIndex = 10
+        Me.Label_Agenda.Text = "Consulta de Eventos"
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(183, Byte), Integer))
+        Me.Panel8.Controls.Add(Me.ConsultaAddBtn)
+        Me.Panel8.Location = New System.Drawing.Point(15, 531)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(915, 104)
+        Me.Panel8.TabIndex = 11
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(723, 80)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(158, 36)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Salir"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'ConsultaAddBtn
+        '
+        Me.ConsultaAddBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(183, Byte), Integer))
+        Me.ConsultaAddBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ConsultaAddBtn.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ConsultaAddBtn.FlatAppearance.BorderSize = 0
+        Me.ConsultaAddBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.ConsultaAddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ConsultaAddBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ConsultaAddBtn.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.ConsultaAddBtn.Image = Global.StyleSalon.My.Resources.Resources.search
+        Me.ConsultaAddBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.ConsultaAddBtn.Location = New System.Drawing.Point(836, 0)
+        Me.ConsultaAddBtn.Margin = New System.Windows.Forms.Padding(5)
+        Me.ConsultaAddBtn.Name = "ConsultaAddBtn"
+        Me.ConsultaAddBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.ConsultaAddBtn.Size = New System.Drawing.Size(79, 104)
+        Me.ConsultaAddBtn.TabIndex = 29
+        Me.ConsultaAddBtn.Tag = "5"
+        Me.ConsultaAddBtn.Text = "Consulta General"
+        Me.ConsultaAddBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ConsultaAddBtn.UseVisualStyleBackColor = False
+        '
         'Consulta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(897, 585)
+        Me.ClientSize = New System.Drawing.Size(939, 644)
+        Me.Controls.Add(Me.Panel8)
+        Me.Controls.Add(Me.Label_Agenda)
+        Me.Controls.Add(Me.Back_Boton)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -209,23 +272,25 @@ Partial Class Consulta
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Consulta"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Consulta de Eventos"
-        Me.Panel1.ResumeLayout(false)
-        Me.Panel6.ResumeLayout(false)
-        Me.Panel6.PerformLayout
-        Me.Panel2.ResumeLayout(false)
-        Me.Panel4.ResumeLayout(false)
-        Me.Panel4.PerformLayout
-        Me.Panel3.ResumeLayout(false)
-        Me.Panel5.ResumeLayout(false)
-        Me.Panel5.PerformLayout
-        Me.ResumeLayout(false)
-        Me.PerformLayout
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        CType(Me.Back_Boton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel8.ResumeLayout(False)
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
 
-End Sub
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
@@ -240,4 +305,9 @@ End Sub
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Back_Boton As System.Windows.Forms.PictureBox
+    Friend WithEvents Label_Agenda As System.Windows.Forms.Label
+    Friend WithEvents Panel8 As System.Windows.Forms.Panel
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents ConsultaAddBtn As System.Windows.Forms.Button
 End Class
