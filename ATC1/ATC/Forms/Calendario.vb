@@ -33,6 +33,7 @@
         colum = 1
         fecha_select = Now
 
+
     End Sub
 
     Public Sub New(FechaStart As Date, Empleado_row As Integer)
@@ -73,13 +74,14 @@
 
     Private Sub Cargar_Horario()
         Me.Horario.Controls.Clear()
-        For h As Integer = 8 To 20
+        For h As Integer = 6 To 22
             Dim time As New TimeSpan(h, 0, 0)
             Dim cita As New Hora(time)
             cita.Dock = DockStyle.Bottom
             Me.Horario.Controls.Add(cita)
             cita.Show()
         Next
+
     End Sub
 
     Private Sub Cargar_Horario(dia As String, empleado As Integer)

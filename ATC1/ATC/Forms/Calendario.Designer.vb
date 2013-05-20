@@ -20,8 +20,8 @@ Partial Class Calendario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Calendario))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -70,7 +70,7 @@ Partial Class Calendario
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(930, 712)
+        Me.Panel1.Size = New System.Drawing.Size(978, 778)
         Me.Panel1.TabIndex = 0
         '
         'Panel5
@@ -80,9 +80,9 @@ Partial Class Calendario
         Me.Panel5.Controls.Add(Me.Label_Empleado)
         Me.Panel5.Controls.Add(Me.Label2)
         Me.Panel5.Controls.Add(Me.Horario)
-        Me.Panel5.Location = New System.Drawing.Point(482, 86)
+        Me.Panel5.Location = New System.Drawing.Point(482, 16)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(448, 508)
+        Me.Panel5.Size = New System.Drawing.Size(448, 578)
         Me.Panel5.TabIndex = 4
         Me.Panel5.Tag = ""
         '
@@ -90,7 +90,7 @@ Partial Class Calendario
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(11, 68)
+        Me.Label3.Location = New System.Drawing.Point(11, 36)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(50, 15)
         Me.Label3.TabIndex = 27
@@ -100,7 +100,7 @@ Partial Class Calendario
         '
         Me.Fecha_Label.AutoSize = True
         Me.Fecha_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Fecha_Label.Location = New System.Drawing.Point(67, 68)
+        Me.Fecha_Label.Location = New System.Drawing.Point(67, 36)
         Me.Fecha_Label.Name = "Fecha_Label"
         Me.Fecha_Label.Size = New System.Drawing.Size(41, 15)
         Me.Fecha_Label.TabIndex = 26
@@ -111,7 +111,7 @@ Partial Class Calendario
         Me.Label_Empleado.AutoSize = True
         Me.Label_Empleado.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_Empleado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Label_Empleado.Location = New System.Drawing.Point(9, 33)
+        Me.Label_Empleado.Location = New System.Drawing.Point(180, 8)
         Me.Label_Empleado.Name = "Label_Empleado"
         Me.Label_Empleado.Size = New System.Drawing.Size(173, 25)
         Me.Label_Empleado.TabIndex = 25
@@ -131,19 +131,20 @@ Partial Class Calendario
         '
         Me.Horario.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Horario.AutoScroll = True
         Me.Horario.AutoSize = True
-        Me.Horario.Location = New System.Drawing.Point(3, 96)
+        Me.Horario.Location = New System.Drawing.Point(3, 60)
         Me.Horario.Name = "Horario"
-        Me.Horario.Size = New System.Drawing.Size(442, 409)
+        Me.Horario.Size = New System.Drawing.Size(442, 515)
         Me.Horario.TabIndex = 24
         '
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.EmpleadosDataGridView)
         Me.Panel4.Controls.Add(Me.Label1)
-        Me.Panel4.Location = New System.Drawing.Point(243, 86)
+        Me.Panel4.Location = New System.Drawing.Point(243, 16)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(233, 508)
+        Me.Panel4.Size = New System.Drawing.Size(233, 578)
         Me.Panel4.TabIndex = 3
         '
         'EmpleadosDataGridView
@@ -151,8 +152,8 @@ Partial Class Calendario
         Me.EmpleadosDataGridView.AllowUserToAddRows = False
         Me.EmpleadosDataGridView.AllowUserToDeleteRows = False
         Me.EmpleadosDataGridView.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.EmpleadosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.EmpleadosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.EmpleadosDataGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -165,21 +166,21 @@ Partial Class Calendario
         Me.EmpleadosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.EmpleadosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.Nombre})
         Me.EmpleadosDataGridView.DataSource = Me.EmpleadosBindingSource
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.EmpleadosDataGridView.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.EmpleadosDataGridView.DefaultCellStyle = DataGridViewCellStyle4
         Me.EmpleadosDataGridView.GridColor = System.Drawing.Color.WhiteSmoke
         Me.EmpleadosDataGridView.Location = New System.Drawing.Point(3, 51)
         Me.EmpleadosDataGridView.Name = "EmpleadosDataGridView"
         Me.EmpleadosDataGridView.ReadOnly = True
         Me.EmpleadosDataGridView.RowHeadersVisible = False
         Me.EmpleadosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.EmpleadosDataGridView.Size = New System.Drawing.Size(227, 446)
+        Me.EmpleadosDataGridView.Size = New System.Drawing.Size(227, 516)
         Me.EmpleadosDataGridView.TabIndex = 22
         '
         'Id
@@ -382,7 +383,7 @@ Partial Class Calendario
         'Calendario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(932, 714)
+        Me.ClientSize = New System.Drawing.Size(980, 780)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Calendario"

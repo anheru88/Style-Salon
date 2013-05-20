@@ -30,6 +30,9 @@ Partial Class Agregar_Cita
         Dim Label13 As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Agregar_Cita))
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnguardar = New System.Windows.Forms.Button()
         Me.Back_Boton = New System.Windows.Forms.PictureBox()
         Me.Label_Agenda = New System.Windows.Forms.Label()
@@ -53,9 +56,6 @@ Partial Class Agregar_Cita
         Me.EmpleadosTableAdapter = New StyleSalon.ATCDataSetTableAdapters.EmpleadosTableAdapter()
         Me.ServiciosTableAdapter = New StyleSalon.ATCDataSetTableAdapters.ServiciosTableAdapter()
         Me.TableAdapterManager = New StyleSalon.ATCDataSetTableAdapters.TableAdapterManager()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         FechaLabel1 = New System.Windows.Forms.Label()
         IdLabel1 = New System.Windows.Forms.Label()
         ClienteLabel1 = New System.Windows.Forms.Label()
@@ -168,6 +168,75 @@ Partial Class Agregar_Cita
         Me.Panel3.Size = New System.Drawing.Size(884, 108)
         Me.Panel3.TabIndex = 32
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button3.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Button3.Image = Global.StyleSalon.My.Resources.Resources.search
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button3.Location = New System.Drawing.Point(158, 0)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.Button3.Size = New System.Drawing.Size(79, 108)
+        Me.Button3.TabIndex = 33
+        Me.Button3.Tag = "5"
+        Me.Button3.Text = "Consulta"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button2.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button2.Location = New System.Drawing.Point(79, 0)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.Button2.Size = New System.Drawing.Size(79, 108)
+        Me.Button2.TabIndex = 32
+        Me.Button2.Tag = "5"
+        Me.Button2.Text = "Nuevo Servicio"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button1.Location = New System.Drawing.Point(0, 0)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.Button1.Size = New System.Drawing.Size(79, 108)
+        Me.Button1.TabIndex = 31
+        Me.Button1.Tag = "5"
+        Me.Button1.Text = "Nuevo Cliente"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'btnguardar
         '
         Me.btnguardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
@@ -233,7 +302,7 @@ Partial Class Agregar_Cita
         Me.Panel2.Controls.Add(FechaLabel1)
         Me.Panel2.Location = New System.Drawing.Point(86, 121)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(803, 457)
+        Me.Panel2.Size = New System.Drawing.Size(809, 457)
         Me.Panel2.TabIndex = 35
         '
         'Label_Mensaje
@@ -259,7 +328,7 @@ Partial Class Agregar_Cita
         Me.HoraDateTimePicker.Location = New System.Drawing.Point(161, 139)
         Me.HoraDateTimePicker.Name = "HoraDateTimePicker"
         Me.HoraDateTimePicker.ShowUpDown = True
-        Me.HoraDateTimePicker.Size = New System.Drawing.Size(564, 35)
+        Me.HoraDateTimePicker.Size = New System.Drawing.Size(570, 35)
         Me.HoraDateTimePicker.TabIndex = 31
         '
         'IdTextBox1
@@ -294,7 +363,7 @@ Partial Class Agregar_Cita
         Me.ServicioComboBox.FormattingEnabled = True
         Me.ServicioComboBox.Location = New System.Drawing.Point(162, 266)
         Me.ServicioComboBox.Name = "ServicioComboBox"
-        Me.ServicioComboBox.Size = New System.Drawing.Size(564, 37)
+        Me.ServicioComboBox.Size = New System.Drawing.Size(570, 37)
         Me.ServicioComboBox.TabIndex = 26
         Me.ServicioComboBox.ValueMember = "Id"
         '
@@ -326,7 +395,7 @@ Partial Class Agregar_Cita
         Me.EmpleadosComboBox.FormattingEnabled = True
         Me.EmpleadosComboBox.Location = New System.Drawing.Point(161, 223)
         Me.EmpleadosComboBox.Name = "EmpleadosComboBox"
-        Me.EmpleadosComboBox.Size = New System.Drawing.Size(564, 37)
+        Me.EmpleadosComboBox.Size = New System.Drawing.Size(570, 37)
         Me.EmpleadosComboBox.TabIndex = 25
         Me.EmpleadosComboBox.ValueMember = "Id"
         '
@@ -348,7 +417,7 @@ Partial Class Agregar_Cita
         Me.ClienteComboBox.FormattingEnabled = True
         Me.ClienteComboBox.Location = New System.Drawing.Point(161, 180)
         Me.ClienteComboBox.Name = "ClienteComboBox"
-        Me.ClienteComboBox.Size = New System.Drawing.Size(564, 37)
+        Me.ClienteComboBox.Size = New System.Drawing.Size(570, 37)
         Me.ClienteComboBox.TabIndex = 24
         Me.ClienteComboBox.ValueMember = "Id"
         '
@@ -366,7 +435,7 @@ Partial Class Agregar_Cita
         Me.FechaDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.FechaDateTimePicker1.Location = New System.Drawing.Point(161, 98)
         Me.FechaDateTimePicker1.Name = "FechaDateTimePicker1"
-        Me.FechaDateTimePicker1.Size = New System.Drawing.Size(564, 35)
+        Me.FechaDateTimePicker1.Size = New System.Drawing.Size(570, 35)
         Me.FechaDateTimePicker1.TabIndex = 16
         '
         'Panel1
@@ -378,7 +447,7 @@ Partial Class Agregar_Cita
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1064, 778)
+        Me.Panel1.Size = New System.Drawing.Size(1120, 778)
         Me.Panel1.TabIndex = 0
         '
         'ClientesTableAdapter
@@ -407,79 +476,10 @@ Partial Class Agregar_Cita
         Me.TableAdapterManager.UpdateOrder = StyleSalon.ATCDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Button2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(79, 0)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(5)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
-        Me.Button2.Size = New System.Drawing.Size(79, 108)
-        Me.Button2.TabIndex = 32
-        Me.Button2.Tag = "5"
-        Me.Button2.Text = "Nuevo Servicio"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(5)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
-        Me.Button1.Size = New System.Drawing.Size(79, 108)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Tag = "5"
-        Me.Button1.Text = "Nuevo Cliente"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Button3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button3.Image = Global.StyleSalon.My.Resources.Resources.search
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(158, 0)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(5)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
-        Me.Button3.Size = New System.Drawing.Size(79, 108)
-        Me.Button3.TabIndex = 33
-        Me.Button3.Tag = "5"
-        Me.Button3.Text = "Consulta"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.UseVisualStyleBackColor = False
-        '
         'Agregar_Cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(1066, 780)
+        Me.ClientSize = New System.Drawing.Size(1122, 780)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Agregar_Cita"

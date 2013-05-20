@@ -25,7 +25,7 @@
     Public Sub New(Empleado_Id As Integer, Fecha As Date)
         Me.New()
 
-        Me.EmpleadosComboBox.SelectedIndex = Empleado_Id
+        Me.EmpleadosComboBox.SelectedValue = Empleado_Id
         Me.FechaDateTimePicker1.Value = Fecha
 
     End Sub
@@ -42,17 +42,11 @@
 
     Public Sub New(id As Integer, Empleado_Id As Integer, Cliente_Id As Integer, Servicio_Id As Integer, Fecha As Date, hora As TimeSpan)
         Me.New()
-        id_ant = id
-        emp_ant = Empleado_Id
-        cli_ant = Cliente_Id
-        ser_ant = Servicio_Id
-        fecha_ant = Fecha
-        hora_ant = hora
 
-        Me.IdTextBox1.Text = id_ant
-        Me.EmpleadosComboBox.SelectedIndex = emp_ant - 1
-        Me.ClienteComboBox.SelectedIndex = cli_ant - 1
-        Me.ServicioComboBox.SelectedIndex = ser_ant - 1
+        Me.IdTextBox1.Text = id
+        Me.EmpleadosComboBox.SelectedValue = Empleado_Id
+        Me.ClienteComboBox.SelectedValue = Cliente_Id
+        Me.ServicioComboBox.SelectedValue = Servicio_Id
         Me.FechaDateTimePicker1.Value = Fecha
         Me.HoraDateTimePicker.Value = New Date(Now.Year, Now.Month, Now.Day, hora.Hours, hora.Minutes, 0)
     End Sub
@@ -71,22 +65,30 @@
     Private Sub btnguardar_Click(sender As System.Object, e As System.EventArgs) Handles btnguardar.Click
         If Me.IdTextBox1.Text = -1 Then
             Try
-                Me.AgendaTableAdapter.Insert(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedIndex + 1), (EmpleadosComboBox.SelectedIndex + 1), (ServicioComboBox.SelectedIndex + 1), TiempoNumericUpDown.Value, "NULL")
-                Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
-                Main.LoadScreen(New Calendario(FechaDateTimePicker1.Value, EmpleadosComboBox.SelectedIndex), MoveDirection.BackIn)
+                If (ClienteComboBox.SelectedIndex <> -1 And EmpleadosComboBox.SelectedIndex <> -1 And ServicioComboBox.SelectedIndex <> -1) Then
+                    Me.AgendaTableAdapter.Insert(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedIndex + 1), (EmpleadosComboBox.SelectedIndex + 1), (ServicioComboBox.SelectedIndex + 1), TiempoNumericUpDown.Value, "NULL")
+                    Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
+                    Main.LoadScreen(New Calendario(FechaDateTimePicker1.Value, EmpleadosComboBox.SelectedIndex), MoveDirection.BackIn)
+                Else
+                    Main.ShowMessage("Atención!", "Faltan Datos Por ingresar.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
+                End If
+
             Catch ex As Exception
                 Main.ShowMessage("Atención!", "Algo no ha salido bien y no se pudo completar la acción solicitada.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
-                MsgBox(ex.ToString())
             End Try
         Else
 
             Try
+                If (ClienteComboBox.SelectedIndex <> -1 And EmpleadosComboBox.SelectedIndex <> -1 And ServicioComboBox.SelectedIndex <> -1) Then
+                    Me.AgendaTableAdapter.Update(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedIndex + 1), (EmpleadosComboBox.SelectedIndex + 1), (ServicioComboBox.SelectedIndex + 1), TiempoNumericUpDown.Value, "NULL", id_ant, fecha_ant, hora_ant, cli_ant, emp_ant, ser_ant, 15, "NULL")
 
-                Me.AgendaTableAdapter.Update(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedIndex + 1), (EmpleadosComboBox.SelectedIndex + 1), (ServicioComboBox.SelectedIndex + 1), TiempoNumericUpDown.Value, "NULL", id_ant, fecha_ant, hora_ant, cli_ant, emp_ant, ser_ant, 15, "NULL")
-              
-                Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
+                    Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
 
-                Main.LoadScreen(New Calendario(FechaDateTimePicker1.Value, EmpleadosComboBox.SelectedIndex), MoveDirection.BackIn)
+                    Main.LoadScreen(New Calendario(FechaDateTimePicker1.Value, EmpleadosComboBox.SelectedIndex), MoveDirection.BackIn)
+                Else
+                    Main.ShowMessage("Atención!", "Faltan Datos Por ingresar.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
+                End If
+
             Catch ex As Exception
                 Main.ShowMessage("Atención!", "Algo no ha salido bien y no se pudo completar la acción solicitada.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
             End Try
@@ -112,11 +114,11 @@
     End Sub
 
     Private Sub VerificarHora()
-        If Me.HoraDateTimePicker.Value.Hour < 8 Then
-            Me.HoraDateTimePicker.Value = New Date(Now.Year, Now.Month, Now.Day, 8, Me.HoraDateTimePicker.Value.Minute, 0)
-            Me.Label_Mensaje.Text = "La hora seleccionada no puede ser menor a 8"
+        If Me.HoraDateTimePicker.Value.Hour < 6 Then
+            Me.HoraDateTimePicker.Value = New Date(Now.Year, Now.Month, Now.Day, 6, Me.HoraDateTimePicker.Value.Minute, 0)
+            Me.Label_Mensaje.Text = "La hora seleccionada no puede ser menor a 6"
         Else
-            If Me.HoraDateTimePicker.Value.Hour > 20 Then
+            If Me.HoraDateTimePicker.Value.Hour > 21 Then
                 Me.HoraDateTimePicker.Value = New Date(Now.Year, Now.Month, Now.Day, 20, Me.HoraDateTimePicker.Value.Minute, 0)
                 Me.Label_Mensaje.Text = "La hora seleccionada no puede ser mayor a 20"
             Else
