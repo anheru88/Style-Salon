@@ -90,6 +90,7 @@ Partial Class Servicios
         IdLabel.Size = New System.Drawing.Size(39, 29)
         IdLabel.TabIndex = 0
         IdLabel.Text = "Id:"
+        IdLabel.Visible = False
         '
         'NombreLabel
         '
@@ -284,6 +285,7 @@ Partial Class Servicios
         Me.IdTextBox.Name = "IdTextBox"
         Me.IdTextBox.Size = New System.Drawing.Size(100, 35)
         Me.IdTextBox.TabIndex = 1
+        Me.IdTextBox.Visible = False
         '
         'NombreTextBox
         '

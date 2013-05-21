@@ -32,7 +32,7 @@
     Public Sub New(Empleado_Id As Integer, Fecha As Date, hora As TimeSpan)
         Me.New()
         Try
-            Me.EmpleadosComboBox.SelectedIndex = Empleado_Id - 1
+            Me.EmpleadosComboBox.SelectedValue = Empleado_Id
             Me.FechaDateTimePicker1.Value = Fecha
             Me.HoraDateTimePicker.Value = New Date(Now.Year, Now.Month, Now.Day, hora.Hours, hora.Minutes, 0)
         Catch ex As Exception
@@ -42,6 +42,13 @@
 
     Public Sub New(id As Integer, Empleado_Id As Integer, Cliente_Id As Integer, Servicio_Id As Integer, Fecha As Date, hora As TimeSpan)
         Me.New()
+        id_ant = id
+        emp_ant = Empleado_Id
+        cli_ant = Cliente_Id
+        ser_ant = Servicio_Id
+        fecha_ant = Fecha
+        hora_ant = hora
+
 
         Me.IdTextBox1.Text = id
         Me.EmpleadosComboBox.SelectedValue = Empleado_Id
@@ -66,7 +73,7 @@
         If Me.IdTextBox1.Text = -1 Then
             Try
                 If (ClienteComboBox.SelectedIndex <> -1 And EmpleadosComboBox.SelectedIndex <> -1 And ServicioComboBox.SelectedIndex <> -1) Then
-                    Me.AgendaTableAdapter.Insert(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedIndex + 1), (EmpleadosComboBox.SelectedIndex + 1), (ServicioComboBox.SelectedIndex + 1), TiempoNumericUpDown.Value, "NULL")
+                    Me.AgendaTableAdapter.Insert(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedValue), (EmpleadosComboBox.SelectedValue), (ServicioComboBox.SelectedValue), TiempoNumericUpDown.Value, "NULL")
                     Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
                     Main.LoadScreen(New Calendario(FechaDateTimePicker1.Value, EmpleadosComboBox.SelectedIndex), MoveDirection.BackIn)
                 Else
@@ -80,7 +87,8 @@
 
             Try
                 If (ClienteComboBox.SelectedIndex <> -1 And EmpleadosComboBox.SelectedIndex <> -1 And ServicioComboBox.SelectedIndex <> -1) Then
-                    Me.AgendaTableAdapter.Update(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedIndex + 1), (EmpleadosComboBox.SelectedIndex + 1), (ServicioComboBox.SelectedIndex + 1), TiempoNumericUpDown.Value, "NULL", id_ant, fecha_ant, hora_ant, cli_ant, emp_ant, ser_ant, 15, "NULL")
+                    Me.AgendaTableAdapter.Update(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedValue), (EmpleadosComboBox.SelectedValue), (ServicioComboBox.SelectedValue), TiempoNumericUpDown.Value, "NULL", id_ant, fecha_ant, hora_ant, cli_ant, emp_ant, ser_ant, 15, "NULL")
+
 
                     Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
 

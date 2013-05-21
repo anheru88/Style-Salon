@@ -45,7 +45,7 @@ Partial Class Login
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(96, 312)
+        Me.Label4.Location = New System.Drawing.Point(120, 377)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 29)
         Me.Label4.TabIndex = 10
@@ -57,7 +57,7 @@ Partial Class Login
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(96, 256)
+        Me.Label3.Location = New System.Drawing.Point(120, 321)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(92, 29)
         Me.Label3.TabIndex = 8
@@ -69,7 +69,7 @@ Partial Class Login
         Me.passWordTxt.BackColor = System.Drawing.Color.White
         Me.passWordTxt.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.passWordTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.passWordTxt.Location = New System.Drawing.Point(212, 313)
+        Me.passWordTxt.Location = New System.Drawing.Point(236, 378)
         Me.passWordTxt.Name = "passWordTxt"
         Me.passWordTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(10004)
         Me.passWordTxt.Size = New System.Drawing.Size(293, 28)
@@ -81,7 +81,7 @@ Partial Class Login
         Me.userTxt.BackColor = System.Drawing.Color.White
         Me.userTxt.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.userTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.userTxt.Location = New System.Drawing.Point(212, 256)
+        Me.userTxt.Location = New System.Drawing.Point(236, 321)
         Me.userTxt.Name = "userTxt"
         Me.userTxt.Size = New System.Drawing.Size(293, 28)
         Me.userTxt.TabIndex = 9
@@ -93,9 +93,9 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Panel1.Location = New System.Drawing.Point(1, 508)
+        Me.Panel1.Location = New System.Drawing.Point(1, 638)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(610, 69)
+        Me.Panel1.Size = New System.Drawing.Size(658, 69)
         Me.Panel1.TabIndex = 12
         '
         'PictureBox1
@@ -103,7 +103,7 @@ Partial Class Login
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = Global.StyleSalon.My.Resources.Resources.next1
-        Me.PictureBox1.Location = New System.Drawing.Point(546, 10)
+        Me.PictureBox1.Location = New System.Drawing.Point(594, 10)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -117,7 +117,7 @@ Partial Class Login
         Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label2.Location = New System.Drawing.Point(465, 15)
+        Me.Label2.Location = New System.Drawing.Point(513, 15)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(78, 32)
         Me.Label2.TabIndex = 10
@@ -129,7 +129,7 @@ Partial Class Login
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(93, 178)
+        Me.Label1.Location = New System.Drawing.Point(117, 243)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(212, 40)
         Me.Label1.TabIndex = 13
@@ -162,7 +162,7 @@ Partial Class Login
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(612, 578)
+        Me.ClientSize = New System.Drawing.Size(660, 708)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label4)

@@ -39,7 +39,6 @@ Partial Class Usuarios
         Me.UsuariosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ATCDataSet = New StyleSalon.ATCDataSet()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.IdTextBox = New System.Windows.Forms.TextBox()
         Me.ActiveCheckBox = New System.Windows.Forms.CheckBox()
@@ -52,6 +51,7 @@ Partial Class Usuarios
         Me.usersEditBtn = New System.Windows.Forms.Button()
         Me.usersDeleteBtn = New System.Windows.Forms.Button()
         Me.btnguardar = New System.Windows.Forms.Button()
+        Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.searchPanel = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -77,10 +77,10 @@ Partial Class Usuarios
         CType(Me.UsuariosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ATCDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.searchPanel.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,6 +97,7 @@ Partial Class Usuarios
         IdLabel.Size = New System.Drawing.Size(39, 29)
         IdLabel.TabIndex = 0
         IdLabel.Text = "Id:"
+        IdLabel.Visible = False
         '
         'NameLabel
         '
@@ -146,7 +147,7 @@ Partial Class Usuarios
         Me.users.Dock = System.Windows.Forms.DockStyle.Fill
         Me.users.Location = New System.Drawing.Point(0, 100)
         Me.users.Name = "users"
-        Me.users.Size = New System.Drawing.Size(748, 366)
+        Me.users.Size = New System.Drawing.Size(764, 420)
         Me.users.TabIndex = 19
         Me.users.Tag = "move,0"
         '
@@ -164,8 +165,8 @@ Partial Class Usuarios
         '
         Me.SplitContainer1.Panel2.AutoScroll = True
         Me.SplitContainer1.Panel2.Controls.Add(Me.Panel4)
-        Me.SplitContainer1.Size = New System.Drawing.Size(748, 261)
-        Me.SplitContainer1.SplitterDistance = 149
+        Me.SplitContainer1.Size = New System.Drawing.Size(764, 315)
+        Me.SplitContainer1.SplitterDistance = 152
         Me.SplitContainer1.TabIndex = 22
         '
         'ClientesDataGridView
@@ -201,7 +202,7 @@ Partial Class Usuarios
         Me.ClientesDataGridView.ReadOnly = True
         Me.ClientesDataGridView.RowHeadersVisible = False
         Me.ClientesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ClientesDataGridView.Size = New System.Drawing.Size(124, 230)
+        Me.ClientesDataGridView.Size = New System.Drawing.Size(127, 284)
         Me.ClientesDataGridView.TabIndex = 21
         '
         'IdDataGridViewTextBoxColumn
@@ -263,15 +264,10 @@ Partial Class Usuarios
         Me.Panel4.Controls.Add(RealNameLabel)
         Me.Panel4.Controls.Add(PasswordLabel)
         Me.Panel4.Controls.Add(Me.PasswordTextBox)
-        Me.Panel4.Location = New System.Drawing.Point(47, 12)
+        Me.Panel4.Location = New System.Drawing.Point(47, 39)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(485, 226)
+        Me.Panel4.Size = New System.Drawing.Size(498, 226)
         Me.Panel4.TabIndex = 12
-        '
-        'ClientesBindingSource
-        '
-        Me.ClientesBindingSource.DataMember = "Clientes"
-        Me.ClientesBindingSource.DataSource = Me.ATCDataSet
         '
         'PictureBox1
         '
@@ -297,8 +293,9 @@ Partial Class Usuarios
         Me.IdTextBox.Location = New System.Drawing.Point(387, 17)
         Me.IdTextBox.Name = "IdTextBox"
         Me.IdTextBox.ReadOnly = True
-        Me.IdTextBox.Size = New System.Drawing.Size(76, 35)
+        Me.IdTextBox.Size = New System.Drawing.Size(89, 35)
         Me.IdTextBox.TabIndex = 1
+        Me.IdTextBox.Visible = False
         '
         'ActiveCheckBox
         '
@@ -319,7 +316,7 @@ Partial Class Usuarios
         Me.RealNameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RealNameTextBox.Location = New System.Drawing.Point(387, 140)
         Me.RealNameTextBox.Name = "RealNameTextBox"
-        Me.RealNameTextBox.Size = New System.Drawing.Size(76, 35)
+        Me.RealNameTextBox.Size = New System.Drawing.Size(89, 35)
         Me.RealNameTextBox.TabIndex = 9
         '
         'NameTextBox
@@ -330,7 +327,7 @@ Partial Class Usuarios
         Me.NameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NameTextBox.Location = New System.Drawing.Point(387, 58)
         Me.NameTextBox.Name = "NameTextBox"
-        Me.NameTextBox.Size = New System.Drawing.Size(76, 35)
+        Me.NameTextBox.Size = New System.Drawing.Size(89, 35)
         Me.NameTextBox.TabIndex = 3
         '
         'PasswordTextBox
@@ -342,7 +339,7 @@ Partial Class Usuarios
         Me.PasswordTextBox.Location = New System.Drawing.Point(387, 99)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9632)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(76, 35)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(89, 35)
         Me.PasswordTextBox.TabIndex = 5
         '
         'Panel3
@@ -351,10 +348,10 @@ Partial Class Usuarios
         Me.Panel3.Controls.Add(Me.Panel5)
         Me.Panel3.Controls.Add(Me.btnguardar)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 261)
+        Me.Panel3.Location = New System.Drawing.Point(0, 315)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Padding = New System.Windows.Forms.Padding(5, 5, 7, 5)
-        Me.Panel3.Size = New System.Drawing.Size(748, 105)
+        Me.Panel3.Size = New System.Drawing.Size(764, 105)
         Me.Panel3.TabIndex = 21
         '
         'Panel5
@@ -365,7 +362,7 @@ Partial Class Usuarios
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(5, 5)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(657, 95)
+        Me.Panel5.Size = New System.Drawing.Size(673, 95)
         Me.Panel5.TabIndex = 22
         '
         'usersAddBtn
@@ -380,7 +377,7 @@ Partial Class Usuarios
         Me.usersAddBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersAddBtn.Image = Global.StyleSalon.My.Resources.Resources.add
         Me.usersAddBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersAddBtn.Location = New System.Drawing.Point(420, 0)
+        Me.usersAddBtn.Location = New System.Drawing.Point(436, 0)
         Me.usersAddBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersAddBtn.Name = "usersAddBtn"
         Me.usersAddBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -404,7 +401,7 @@ Partial Class Usuarios
         Me.usersEditBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersEditBtn.Image = Global.StyleSalon.My.Resources.Resources.edit
         Me.usersEditBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersEditBtn.Location = New System.Drawing.Point(499, 0)
+        Me.usersEditBtn.Location = New System.Drawing.Point(515, 0)
         Me.usersEditBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersEditBtn.Name = "usersEditBtn"
         Me.usersEditBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -428,7 +425,7 @@ Partial Class Usuarios
         Me.usersDeleteBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersDeleteBtn.Image = Global.StyleSalon.My.Resources.Resources.delete
         Me.usersDeleteBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersDeleteBtn.Location = New System.Drawing.Point(578, 0)
+        Me.usersDeleteBtn.Location = New System.Drawing.Point(594, 0)
         Me.usersDeleteBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersDeleteBtn.Name = "usersDeleteBtn"
         Me.usersDeleteBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -452,7 +449,7 @@ Partial Class Usuarios
         Me.btnguardar.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnguardar.Image = Global.StyleSalon.My.Resources.Resources.save
         Me.btnguardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnguardar.Location = New System.Drawing.Point(662, 5)
+        Me.btnguardar.Location = New System.Drawing.Point(678, 5)
         Me.btnguardar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -464,6 +461,11 @@ Partial Class Usuarios
         Me.btnguardar.UseVisualStyleBackColor = False
         Me.btnguardar.Visible = False
         '
+        'ClientesBindingSource
+        '
+        Me.ClientesBindingSource.DataMember = "Clientes"
+        Me.ClientesBindingSource.DataSource = Me.ATCDataSet
+        '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.searchPanel)
@@ -473,7 +475,7 @@ Partial Class Usuarios
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(20, 30, 0, 0)
-        Me.Panel2.Size = New System.Drawing.Size(748, 100)
+        Me.Panel2.Size = New System.Drawing.Size(764, 100)
         Me.Panel2.TabIndex = 20
         '
         'searchPanel
@@ -481,7 +483,7 @@ Partial Class Usuarios
         Me.searchPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.searchPanel.Controls.Add(Me.TextBox1)
         Me.searchPanel.Controls.Add(Me.PictureBox2)
-        Me.searchPanel.Location = New System.Drawing.Point(425, 43)
+        Me.searchPanel.Location = New System.Drawing.Point(441, 43)
         Me.searchPanel.Name = "searchPanel"
         Me.searchPanel.Size = New System.Drawing.Size(316, 51)
         Me.searchPanel.TabIndex = 17
@@ -539,7 +541,7 @@ Partial Class Usuarios
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 30)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(748, 466)
+        Me.Panel1.Size = New System.Drawing.Size(764, 520)
         Me.Panel1.TabIndex = 21
         '
         'UsuariosTableAdapter
@@ -567,7 +569,7 @@ Partial Class Usuarios
         'Usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(750, 497)
+        Me.ClientSize = New System.Drawing.Size(766, 551)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -586,10 +588,10 @@ Partial Class Usuarios
         CType(Me.ATCDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
+        CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.searchPanel.ResumeLayout(False)

@@ -102,99 +102,108 @@ Partial Class Clientes
         IdLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         IdLabel.AutoSize = True
         IdLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        IdLabel.Location = New System.Drawing.Point(79, 88)
+        IdLabel.Location = New System.Drawing.Point(79, 92)
         IdLabel.Name = "IdLabel"
         IdLabel.Size = New System.Drawing.Size(39, 29)
         IdLabel.TabIndex = 0
         IdLabel.Text = "Id:"
+        IdLabel.UseWaitCursor = True
         '
         'NombreLabel
         '
         NombreLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         NombreLabel.AutoSize = True
         NombreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        NombreLabel.Location = New System.Drawing.Point(79, 129)
+        NombreLabel.Location = New System.Drawing.Point(79, 133)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(107, 29)
         NombreLabel.TabIndex = 2
         NombreLabel.Text = "Nombre:"
+        NombreLabel.UseWaitCursor = True
         '
         'CedulaLabel
         '
         CedulaLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         CedulaLabel.AutoSize = True
         CedulaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        CedulaLabel.Location = New System.Drawing.Point(79, 170)
+        CedulaLabel.Location = New System.Drawing.Point(79, 174)
         CedulaLabel.Name = "CedulaLabel"
         CedulaLabel.Size = New System.Drawing.Size(96, 29)
         CedulaLabel.TabIndex = 4
         CedulaLabel.Text = "Cedula:"
+        CedulaLabel.UseWaitCursor = True
         '
         'EmailLabel
         '
         EmailLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         EmailLabel.AutoSize = True
         EmailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        EmailLabel.Location = New System.Drawing.Point(79, 211)
+        EmailLabel.Location = New System.Drawing.Point(79, 215)
         EmailLabel.Name = "EmailLabel"
         EmailLabel.Size = New System.Drawing.Size(80, 29)
         EmailLabel.TabIndex = 6
         EmailLabel.Text = "Email:"
+        EmailLabel.UseWaitCursor = True
         '
         'TelefonoLabel
         '
         TelefonoLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         TelefonoLabel.AutoSize = True
         TelefonoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TelefonoLabel.Location = New System.Drawing.Point(79, 252)
+        TelefonoLabel.Location = New System.Drawing.Point(79, 256)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(116, 29)
         TelefonoLabel.TabIndex = 8
         TelefonoLabel.Text = "Telefono:"
+        TelefonoLabel.UseWaitCursor = True
         '
         'CelularLabel
         '
         CelularLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         CelularLabel.AutoSize = True
         CelularLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        CelularLabel.Location = New System.Drawing.Point(79, 293)
+        CelularLabel.Location = New System.Drawing.Point(79, 297)
         CelularLabel.Name = "CelularLabel"
         CelularLabel.Size = New System.Drawing.Size(96, 29)
         CelularLabel.TabIndex = 10
         CelularLabel.Text = "Celular:"
+        CelularLabel.UseWaitCursor = True
         '
         'DireccionLabel
         '
         DireccionLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         DireccionLabel.AutoSize = True
         DireccionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DireccionLabel.Location = New System.Drawing.Point(79, 334)
+        DireccionLabel.Location = New System.Drawing.Point(79, 338)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(121, 29)
         DireccionLabel.TabIndex = 12
         DireccionLabel.Text = "Direccion:"
+        DireccionLabel.UseWaitCursor = True
         '
         'Label3
         '
         Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Label3.AutoSize = True
         Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label3.Location = New System.Drawing.Point(79, 419)
+        Label3.Location = New System.Drawing.Point(79, 423)
         Label3.Name = "Label3"
         Label3.Size = New System.Drawing.Size(202, 29)
         Label3.TabIndex = 21
         Label3.Text = "Mes cumpleaños:"
+        Label3.UseWaitCursor = True
         '
         'Label1
         '
         Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Label1.AutoSize = True
         Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label1.Location = New System.Drawing.Point(79, 374)
+        Label1.Location = New System.Drawing.Point(79, 378)
         Label1.Name = "Label1"
         Label1.Size = New System.Drawing.Size(192, 29)
         Label1.TabIndex = 20
         Label1.Text = "Día cumpleaños:"
+        Label1.UseWaitCursor = True
         '
         'users
         '
@@ -204,7 +213,7 @@ Partial Class Clientes
         Me.users.Dock = System.Windows.Forms.DockStyle.Fill
         Me.users.Location = New System.Drawing.Point(0, 100)
         Me.users.Name = "users"
-        Me.users.Size = New System.Drawing.Size(939, 649)
+        Me.users.Size = New System.Drawing.Size(987, 657)
         Me.users.TabIndex = 19
         Me.users.Tag = "move,0"
         '
@@ -239,8 +248,9 @@ Partial Class Clientes
         Me.SplitContainer1.Panel2.Controls.Add(Me.TelefonoTextBox)
         Me.SplitContainer1.Panel2.Controls.Add(Me.EmailTextBox)
         Me.SplitContainer1.Panel2.Controls.Add(TelefonoLabel)
-        Me.SplitContainer1.Size = New System.Drawing.Size(939, 544)
-        Me.SplitContainer1.SplitterDistance = 356
+        Me.SplitContainer1.Panel2.UseWaitCursor = True
+        Me.SplitContainer1.Size = New System.Drawing.Size(987, 552)
+        Me.SplitContainer1.SplitterDistance = 374
         Me.SplitContainer1.TabIndex = 22
         '
         'ClientesDataGridView
@@ -292,7 +302,7 @@ Partial Class Clientes
         Me.ClientesDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.ClientesDataGridView.RowHeadersVisible = False
         Me.ClientesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ClientesDataGridView.Size = New System.Drawing.Size(316, 513)
+        Me.ClientesDataGridView.Size = New System.Drawing.Size(334, 521)
         Me.ClientesDataGridView.TabIndex = 21
         '
         'IdDataGridViewTextBoxColumn
@@ -359,12 +369,13 @@ Partial Class Clientes
         Me.MesCumpleañosNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MesCumpleañosNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ClientesBindingSource, "MesCumpleaños", True))
         Me.MesCumpleañosNumericUpDown.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MesCumpleañosNumericUpDown.Location = New System.Drawing.Point(287, 413)
+        Me.MesCumpleañosNumericUpDown.Location = New System.Drawing.Point(287, 417)
         Me.MesCumpleañosNumericUpDown.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
         Me.MesCumpleañosNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.MesCumpleañosNumericUpDown.Name = "MesCumpleañosNumericUpDown"
-        Me.MesCumpleañosNumericUpDown.Size = New System.Drawing.Size(164, 35)
+        Me.MesCumpleañosNumericUpDown.Size = New System.Drawing.Size(194, 35)
         Me.MesCumpleañosNumericUpDown.TabIndex = 19
+        Me.MesCumpleañosNumericUpDown.UseWaitCursor = True
         Me.MesCumpleañosNumericUpDown.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'DiaCumpleañosNumericUpDown
@@ -372,12 +383,13 @@ Partial Class Clientes
         Me.DiaCumpleañosNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DiaCumpleañosNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ClientesBindingSource, "DiaCumpleaños", True))
         Me.DiaCumpleañosNumericUpDown.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DiaCumpleañosNumericUpDown.Location = New System.Drawing.Point(287, 372)
+        Me.DiaCumpleañosNumericUpDown.Location = New System.Drawing.Point(287, 376)
         Me.DiaCumpleañosNumericUpDown.Maximum = New Decimal(New Integer() {31, 0, 0, 0})
         Me.DiaCumpleañosNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.DiaCumpleañosNumericUpDown.Name = "DiaCumpleañosNumericUpDown"
-        Me.DiaCumpleañosNumericUpDown.Size = New System.Drawing.Size(164, 35)
+        Me.DiaCumpleañosNumericUpDown.Size = New System.Drawing.Size(194, 35)
         Me.DiaCumpleañosNumericUpDown.TabIndex = 18
+        Me.DiaCumpleañosNumericUpDown.UseWaitCursor = True
         Me.DiaCumpleañosNumericUpDown.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'IdTextBox
@@ -385,71 +397,78 @@ Partial Class Clientes
         Me.IdTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Id", True))
         Me.IdTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IdTextBox.Location = New System.Drawing.Point(287, 85)
+        Me.IdTextBox.Location = New System.Drawing.Point(287, 89)
         Me.IdTextBox.Name = "IdTextBox"
         Me.IdTextBox.ReadOnly = True
         Me.IdTextBox.Size = New System.Drawing.Size(66, 35)
         Me.IdTextBox.TabIndex = 1
+        Me.IdTextBox.UseWaitCursor = True
         '
         'DireccionTextBox
         '
         Me.DireccionTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Direccion", True))
         Me.DireccionTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(287, 331)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(287, 335)
         Me.DireccionTextBox.Name = "DireccionTextBox"
-        Me.DireccionTextBox.Size = New System.Drawing.Size(250, 35)
+        Me.DireccionTextBox.Size = New System.Drawing.Size(280, 35)
         Me.DireccionTextBox.TabIndex = 13
+        Me.DireccionTextBox.UseWaitCursor = True
         '
         'NombreTextBox
         '
         Me.NombreTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Nombre", True))
         Me.NombreTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NombreTextBox.Location = New System.Drawing.Point(287, 126)
+        Me.NombreTextBox.Location = New System.Drawing.Point(287, 130)
         Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(250, 35)
+        Me.NombreTextBox.Size = New System.Drawing.Size(280, 35)
         Me.NombreTextBox.TabIndex = 3
+        Me.NombreTextBox.UseWaitCursor = True
         '
         'CelularTextBox
         '
         Me.CelularTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CelularTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Celular", True))
         Me.CelularTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CelularTextBox.Location = New System.Drawing.Point(287, 290)
+        Me.CelularTextBox.Location = New System.Drawing.Point(287, 294)
         Me.CelularTextBox.Name = "CelularTextBox"
-        Me.CelularTextBox.Size = New System.Drawing.Size(250, 35)
+        Me.CelularTextBox.Size = New System.Drawing.Size(280, 35)
         Me.CelularTextBox.TabIndex = 11
+        Me.CelularTextBox.UseWaitCursor = True
         '
         'CedulaTextBox
         '
         Me.CedulaTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CedulaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Cedula", True))
         Me.CedulaTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CedulaTextBox.Location = New System.Drawing.Point(287, 167)
+        Me.CedulaTextBox.Location = New System.Drawing.Point(287, 171)
         Me.CedulaTextBox.Name = "CedulaTextBox"
-        Me.CedulaTextBox.Size = New System.Drawing.Size(250, 35)
+        Me.CedulaTextBox.Size = New System.Drawing.Size(280, 35)
         Me.CedulaTextBox.TabIndex = 5
+        Me.CedulaTextBox.UseWaitCursor = True
         '
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Telefono", True))
         Me.TelefonoTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(287, 249)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(287, 253)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
-        Me.TelefonoTextBox.Size = New System.Drawing.Size(250, 35)
+        Me.TelefonoTextBox.Size = New System.Drawing.Size(280, 35)
         Me.TelefonoTextBox.TabIndex = 9
+        Me.TelefonoTextBox.UseWaitCursor = True
         '
         'EmailTextBox
         '
         Me.EmailTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.EmailTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Email", True))
         Me.EmailTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EmailTextBox.Location = New System.Drawing.Point(287, 208)
+        Me.EmailTextBox.Location = New System.Drawing.Point(287, 212)
         Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(250, 35)
+        Me.EmailTextBox.Size = New System.Drawing.Size(280, 35)
         Me.EmailTextBox.TabIndex = 7
+        Me.EmailTextBox.UseWaitCursor = True
         '
         'Panel3
         '
@@ -459,10 +478,10 @@ Partial Class Clientes
         Me.Panel3.Controls.Add(Me.usersDeleteBtn)
         Me.Panel3.Controls.Add(Me.btnguardar)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 544)
+        Me.Panel3.Location = New System.Drawing.Point(0, 552)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Padding = New System.Windows.Forms.Padding(5, 5, 7, 5)
-        Me.Panel3.Size = New System.Drawing.Size(939, 105)
+        Me.Panel3.Size = New System.Drawing.Size(987, 105)
         Me.Panel3.TabIndex = 21
         '
         'usersAddBtn
@@ -477,7 +496,7 @@ Partial Class Clientes
         Me.usersAddBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersAddBtn.Image = Global.StyleSalon.My.Resources.Resources.add
         Me.usersAddBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersAddBtn.Location = New System.Drawing.Point(616, 5)
+        Me.usersAddBtn.Location = New System.Drawing.Point(664, 5)
         Me.usersAddBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersAddBtn.Name = "usersAddBtn"
         Me.usersAddBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -501,7 +520,7 @@ Partial Class Clientes
         Me.usersEditBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersEditBtn.Image = Global.StyleSalon.My.Resources.Resources.edit
         Me.usersEditBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersEditBtn.Location = New System.Drawing.Point(695, 5)
+        Me.usersEditBtn.Location = New System.Drawing.Point(743, 5)
         Me.usersEditBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersEditBtn.Name = "usersEditBtn"
         Me.usersEditBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -525,7 +544,7 @@ Partial Class Clientes
         Me.usersDeleteBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersDeleteBtn.Image = Global.StyleSalon.My.Resources.Resources.delete
         Me.usersDeleteBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersDeleteBtn.Location = New System.Drawing.Point(774, 5)
+        Me.usersDeleteBtn.Location = New System.Drawing.Point(822, 5)
         Me.usersDeleteBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersDeleteBtn.Name = "usersDeleteBtn"
         Me.usersDeleteBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -549,7 +568,7 @@ Partial Class Clientes
         Me.btnguardar.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnguardar.Image = Global.StyleSalon.My.Resources.Resources.save
         Me.btnguardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnguardar.Location = New System.Drawing.Point(853, 5)
+        Me.btnguardar.Location = New System.Drawing.Point(901, 5)
         Me.btnguardar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -570,7 +589,7 @@ Partial Class Clientes
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(20, 30, 0, 0)
-        Me.Panel2.Size = New System.Drawing.Size(939, 100)
+        Me.Panel2.Size = New System.Drawing.Size(987, 100)
         Me.Panel2.TabIndex = 20
         '
         'searchPanel
@@ -578,7 +597,7 @@ Partial Class Clientes
         Me.searchPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.searchPanel.Controls.Add(Me.TextBox1)
         Me.searchPanel.Controls.Add(Me.PictureBox2)
-        Me.searchPanel.Location = New System.Drawing.Point(566, 30)
+        Me.searchPanel.Location = New System.Drawing.Point(614, 30)
         Me.searchPanel.Name = "searchPanel"
         Me.searchPanel.Size = New System.Drawing.Size(366, 64)
         Me.searchPanel.TabIndex = 17
@@ -636,7 +655,7 @@ Partial Class Clientes
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 30)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(939, 749)
+        Me.Panel1.Size = New System.Drawing.Size(987, 757)
         Me.Panel1.TabIndex = 21
         '
         'TableAdapterManager
@@ -660,7 +679,7 @@ Partial Class Clientes
         'Clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(941, 780)
+        Me.ClientSize = New System.Drawing.Size(989, 788)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

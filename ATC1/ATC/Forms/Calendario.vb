@@ -98,32 +98,40 @@
             Dim cita2 As Hora
 
             Select Case (Convert.ToInt32(cita.Hora.Hours.ToString()))
-                Case 8
+                Case 6
                     cita2 = Me.Horario.Controls.Item(0)
-                Case 9
+                Case 7
                     cita2 = Me.Horario.Controls.Item(1)
-                Case 10
+                Case 8
                     cita2 = Me.Horario.Controls.Item(2)
-                Case 11
+                Case 9
                     cita2 = Me.Horario.Controls.Item(3)
-                Case 12
+                Case 10
                     cita2 = Me.Horario.Controls.Item(4)
-                Case 13
+                Case 11
                     cita2 = Me.Horario.Controls.Item(5)
-                Case 14
+                Case 12
                     cita2 = Me.Horario.Controls.Item(6)
-                Case 15
+                Case 13
                     cita2 = Me.Horario.Controls.Item(7)
-                Case 16
+                Case 14
                     cita2 = Me.Horario.Controls.Item(8)
-                Case 17
+                Case 15
                     cita2 = Me.Horario.Controls.Item(9)
-                Case 18
+                Case 16
                     cita2 = Me.Horario.Controls.Item(10)
-                Case 19
+                Case 17
                     cita2 = Me.Horario.Controls.Item(11)
-                Case 20
+                Case 18
                     cita2 = Me.Horario.Controls.Item(12)
+                Case 19
+                    cita2 = Me.Horario.Controls.Item(13)
+                Case 20
+                    cita2 = Me.Horario.Controls.Item(14)
+                Case 21
+                    cita2 = Me.Horario.Controls.Item(15)
+                Case 22
+                    cita2 = Me.Horario.Controls.Item(16)
                 Case Else
                     Continue For
             End Select
@@ -140,7 +148,7 @@
             filaseleccionada = Convert.ToInt32(Me.EmpleadosDataGridView.CurrentRow.Index)
 
             IdentEmpleado = Me.EmpleadosDataGridView.Item("Id", filaseleccionada).Value
-
+            'MsgBox(IdentEmpleado)
             Cargar_Horario(Fecha_Label.Text, IdentEmpleado)
         Catch ex As Exception
             IdentEmpleado = -2

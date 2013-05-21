@@ -63,7 +63,7 @@ Partial Class Configuracion
         Me.serverTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.serverTxt.Location = New System.Drawing.Point(204, 25)
         Me.serverTxt.Name = "serverTxt"
-        Me.serverTxt.Size = New System.Drawing.Size(272, 35)
+        Me.serverTxt.Size = New System.Drawing.Size(296, 35)
         Me.serverTxt.TabIndex = 1
         '
         'Label2
@@ -107,7 +107,7 @@ Partial Class Configuracion
         Me.userTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.userTxt.Location = New System.Drawing.Point(204, 66)
         Me.userTxt.Name = "userTxt"
-        Me.userTxt.Size = New System.Drawing.Size(272, 35)
+        Me.userTxt.Size = New System.Drawing.Size(296, 35)
         Me.userTxt.TabIndex = 3
         '
         'passWordTxt
@@ -119,7 +119,7 @@ Partial Class Configuracion
         Me.passWordTxt.Location = New System.Drawing.Point(204, 107)
         Me.passWordTxt.Name = "passWordTxt"
         Me.passWordTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(10004)
-        Me.passWordTxt.Size = New System.Drawing.Size(272, 35)
+        Me.passWordTxt.Size = New System.Drawing.Size(296, 35)
         Me.passWordTxt.TabIndex = 5
         '
         'databaseTxt
@@ -130,7 +130,7 @@ Partial Class Configuracion
         Me.databaseTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.databaseTxt.Location = New System.Drawing.Point(204, 148)
         Me.databaseTxt.Name = "databaseTxt"
-        Me.databaseTxt.Size = New System.Drawing.Size(272, 35)
+        Me.databaseTxt.Size = New System.Drawing.Size(296, 35)
         Me.databaseTxt.TabIndex = 7
         '
         'Panel1
@@ -139,9 +139,9 @@ Partial Class Configuracion
         Me.Panel1.Controls.Add(Me.btnguardar)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.ForeColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(0, 533)
+        Me.Panel1.Location = New System.Drawing.Point(0, 598)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(567, 88)
+        Me.Panel1.Size = New System.Drawing.Size(591, 88)
         Me.Panel1.TabIndex = 8
         '
         'btnguardar
@@ -156,7 +156,7 @@ Partial Class Configuracion
         Me.btnguardar.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnguardar.Image = Global.StyleSalon.My.Resources.Resources.save
         Me.btnguardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnguardar.Location = New System.Drawing.Point(488, 0)
+        Me.btnguardar.Location = New System.Drawing.Point(512, 0)
         Me.btnguardar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -175,7 +175,7 @@ Partial Class Configuracion
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(1, 1)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(567, 621)
+        Me.Panel2.Size = New System.Drawing.Size(591, 686)
         Me.Panel2.TabIndex = 9
         '
         'TabControl1
@@ -187,7 +187,7 @@ Partial Class Configuracion
         Me.TabControl1.Location = New System.Drawing.Point(20, 124)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(529, 391)
+        Me.TabControl1.Size = New System.Drawing.Size(553, 456)
         Me.TabControl1.TabIndex = 22
         '
         'TabPage1
@@ -203,7 +203,7 @@ Partial Class Configuracion
         Me.TabPage1.Location = New System.Drawing.Point(4, 24)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(521, 363)
+        Me.TabPage1.Size = New System.Drawing.Size(545, 428)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Conexión"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -216,7 +216,7 @@ Partial Class Configuracion
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Padding = New System.Windows.Forms.Padding(20, 30, 0, 0)
-        Me.Panel3.Size = New System.Drawing.Size(567, 100)
+        Me.Panel3.Size = New System.Drawing.Size(591, 100)
         Me.Panel3.TabIndex = 21
         '
         'Label5
@@ -246,7 +246,7 @@ Partial Class Configuracion
         'Configuracion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(569, 623)
+        Me.ClientSize = New System.Drawing.Size(593, 688)
         Me.Controls.Add(Me.Panel2)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
