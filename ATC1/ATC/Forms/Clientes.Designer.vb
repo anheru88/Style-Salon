@@ -213,7 +213,7 @@ Partial Class Clientes
         Me.users.Dock = System.Windows.Forms.DockStyle.Fill
         Me.users.Location = New System.Drawing.Point(0, 100)
         Me.users.Name = "users"
-        Me.users.Size = New System.Drawing.Size(987, 657)
+        Me.users.Size = New System.Drawing.Size(1035, 657)
         Me.users.TabIndex = 19
         Me.users.Tag = "move,0"
         '
@@ -249,8 +249,8 @@ Partial Class Clientes
         Me.SplitContainer1.Panel2.Controls.Add(Me.EmailTextBox)
         Me.SplitContainer1.Panel2.Controls.Add(TelefonoLabel)
         Me.SplitContainer1.Panel2.UseWaitCursor = True
-        Me.SplitContainer1.Size = New System.Drawing.Size(987, 552)
-        Me.SplitContainer1.SplitterDistance = 374
+        Me.SplitContainer1.Size = New System.Drawing.Size(1035, 552)
+        Me.SplitContainer1.SplitterDistance = 392
         Me.SplitContainer1.TabIndex = 22
         '
         'ClientesDataGridView
@@ -302,7 +302,7 @@ Partial Class Clientes
         Me.ClientesDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.ClientesDataGridView.RowHeadersVisible = False
         Me.ClientesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ClientesDataGridView.Size = New System.Drawing.Size(334, 521)
+        Me.ClientesDataGridView.Size = New System.Drawing.Size(352, 521)
         Me.ClientesDataGridView.TabIndex = 21
         '
         'IdDataGridViewTextBoxColumn
@@ -373,7 +373,7 @@ Partial Class Clientes
         Me.MesCumpleañosNumericUpDown.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
         Me.MesCumpleañosNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.MesCumpleañosNumericUpDown.Name = "MesCumpleañosNumericUpDown"
-        Me.MesCumpleañosNumericUpDown.Size = New System.Drawing.Size(194, 35)
+        Me.MesCumpleañosNumericUpDown.Size = New System.Drawing.Size(224, 35)
         Me.MesCumpleañosNumericUpDown.TabIndex = 19
         Me.MesCumpleañosNumericUpDown.UseWaitCursor = True
         Me.MesCumpleañosNumericUpDown.Value = New Decimal(New Integer() {1, 0, 0, 0})
@@ -387,7 +387,7 @@ Partial Class Clientes
         Me.DiaCumpleañosNumericUpDown.Maximum = New Decimal(New Integer() {31, 0, 0, 0})
         Me.DiaCumpleañosNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.DiaCumpleañosNumericUpDown.Name = "DiaCumpleañosNumericUpDown"
-        Me.DiaCumpleañosNumericUpDown.Size = New System.Drawing.Size(194, 35)
+        Me.DiaCumpleañosNumericUpDown.Size = New System.Drawing.Size(224, 35)
         Me.DiaCumpleañosNumericUpDown.TabIndex = 18
         Me.DiaCumpleañosNumericUpDown.UseWaitCursor = True
         Me.DiaCumpleañosNumericUpDown.Value = New Decimal(New Integer() {1, 0, 0, 0})
@@ -411,7 +411,7 @@ Partial Class Clientes
         Me.DireccionTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DireccionTextBox.Location = New System.Drawing.Point(287, 335)
         Me.DireccionTextBox.Name = "DireccionTextBox"
-        Me.DireccionTextBox.Size = New System.Drawing.Size(280, 35)
+        Me.DireccionTextBox.Size = New System.Drawing.Size(310, 35)
         Me.DireccionTextBox.TabIndex = 13
         Me.DireccionTextBox.UseWaitCursor = True
         '
@@ -422,7 +422,7 @@ Partial Class Clientes
         Me.NombreTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NombreTextBox.Location = New System.Drawing.Point(287, 130)
         Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(280, 35)
+        Me.NombreTextBox.Size = New System.Drawing.Size(310, 35)
         Me.NombreTextBox.TabIndex = 3
         Me.NombreTextBox.UseWaitCursor = True
         '
@@ -433,7 +433,7 @@ Partial Class Clientes
         Me.CelularTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CelularTextBox.Location = New System.Drawing.Point(287, 294)
         Me.CelularTextBox.Name = "CelularTextBox"
-        Me.CelularTextBox.Size = New System.Drawing.Size(280, 35)
+        Me.CelularTextBox.Size = New System.Drawing.Size(310, 35)
         Me.CelularTextBox.TabIndex = 11
         Me.CelularTextBox.UseWaitCursor = True
         '
@@ -444,7 +444,7 @@ Partial Class Clientes
         Me.CedulaTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CedulaTextBox.Location = New System.Drawing.Point(287, 171)
         Me.CedulaTextBox.Name = "CedulaTextBox"
-        Me.CedulaTextBox.Size = New System.Drawing.Size(280, 35)
+        Me.CedulaTextBox.Size = New System.Drawing.Size(310, 35)
         Me.CedulaTextBox.TabIndex = 5
         Me.CedulaTextBox.UseWaitCursor = True
         '
@@ -455,7 +455,7 @@ Partial Class Clientes
         Me.TelefonoTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TelefonoTextBox.Location = New System.Drawing.Point(287, 253)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
-        Me.TelefonoTextBox.Size = New System.Drawing.Size(280, 35)
+        Me.TelefonoTextBox.Size = New System.Drawing.Size(310, 35)
         Me.TelefonoTextBox.TabIndex = 9
         Me.TelefonoTextBox.UseWaitCursor = True
         '
@@ -466,7 +466,7 @@ Partial Class Clientes
         Me.EmailTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EmailTextBox.Location = New System.Drawing.Point(287, 212)
         Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(280, 35)
+        Me.EmailTextBox.Size = New System.Drawing.Size(310, 35)
         Me.EmailTextBox.TabIndex = 7
         Me.EmailTextBox.UseWaitCursor = True
         '
@@ -481,7 +481,7 @@ Partial Class Clientes
         Me.Panel3.Location = New System.Drawing.Point(0, 552)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Padding = New System.Windows.Forms.Padding(5, 5, 7, 5)
-        Me.Panel3.Size = New System.Drawing.Size(987, 105)
+        Me.Panel3.Size = New System.Drawing.Size(1035, 105)
         Me.Panel3.TabIndex = 21
         '
         'usersAddBtn
@@ -496,7 +496,7 @@ Partial Class Clientes
         Me.usersAddBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersAddBtn.Image = Global.StyleSalon.My.Resources.Resources.add
         Me.usersAddBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersAddBtn.Location = New System.Drawing.Point(664, 5)
+        Me.usersAddBtn.Location = New System.Drawing.Point(712, 5)
         Me.usersAddBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersAddBtn.Name = "usersAddBtn"
         Me.usersAddBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -520,7 +520,7 @@ Partial Class Clientes
         Me.usersEditBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersEditBtn.Image = Global.StyleSalon.My.Resources.Resources.edit
         Me.usersEditBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersEditBtn.Location = New System.Drawing.Point(743, 5)
+        Me.usersEditBtn.Location = New System.Drawing.Point(791, 5)
         Me.usersEditBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersEditBtn.Name = "usersEditBtn"
         Me.usersEditBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -544,7 +544,7 @@ Partial Class Clientes
         Me.usersDeleteBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.usersDeleteBtn.Image = Global.StyleSalon.My.Resources.Resources.delete
         Me.usersDeleteBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.usersDeleteBtn.Location = New System.Drawing.Point(822, 5)
+        Me.usersDeleteBtn.Location = New System.Drawing.Point(870, 5)
         Me.usersDeleteBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.usersDeleteBtn.Name = "usersDeleteBtn"
         Me.usersDeleteBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -568,7 +568,7 @@ Partial Class Clientes
         Me.btnguardar.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnguardar.Image = Global.StyleSalon.My.Resources.Resources.save
         Me.btnguardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnguardar.Location = New System.Drawing.Point(901, 5)
+        Me.btnguardar.Location = New System.Drawing.Point(949, 5)
         Me.btnguardar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -589,7 +589,7 @@ Partial Class Clientes
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(20, 30, 0, 0)
-        Me.Panel2.Size = New System.Drawing.Size(987, 100)
+        Me.Panel2.Size = New System.Drawing.Size(1035, 100)
         Me.Panel2.TabIndex = 20
         '
         'searchPanel
@@ -597,7 +597,7 @@ Partial Class Clientes
         Me.searchPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.searchPanel.Controls.Add(Me.TextBox1)
         Me.searchPanel.Controls.Add(Me.PictureBox2)
-        Me.searchPanel.Location = New System.Drawing.Point(614, 30)
+        Me.searchPanel.Location = New System.Drawing.Point(662, 30)
         Me.searchPanel.Name = "searchPanel"
         Me.searchPanel.Size = New System.Drawing.Size(366, 64)
         Me.searchPanel.TabIndex = 17
@@ -655,7 +655,7 @@ Partial Class Clientes
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 30)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(987, 757)
+        Me.Panel1.Size = New System.Drawing.Size(1035, 757)
         Me.Panel1.TabIndex = 21
         '
         'TableAdapterManager
@@ -679,7 +679,7 @@ Partial Class Clientes
         'Clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(989, 788)
+        Me.ClientSize = New System.Drawing.Size(1037, 788)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

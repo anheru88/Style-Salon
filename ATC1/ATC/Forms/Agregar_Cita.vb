@@ -19,6 +19,7 @@
         Me.ClienteComboBox.SelectedIndex = -1
         Me.ServicioComboBox.SelectedIndex = -1
         Me.EmpleadosComboBox.SelectedIndex = -1
+        Me.Button4.Visible = False
         VerificarHora()
     End Sub
 
@@ -42,6 +43,9 @@
 
     Public Sub New(id As Integer, Empleado_Id As Integer, Cliente_Id As Integer, Servicio_Id As Integer, Fecha As Date, hora As TimeSpan)
         Me.New()
+        Me.Button4.Visible = True
+
+
         id_ant = id
         emp_ant = Empleado_Id
         cli_ant = Cliente_Id
@@ -87,7 +91,9 @@
 
             Try
                 If (ClienteComboBox.SelectedIndex <> -1 And EmpleadosComboBox.SelectedIndex <> -1 And ServicioComboBox.SelectedIndex <> -1) Then
-                    Me.AgendaTableAdapter.Update(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0), (ClienteComboBox.SelectedValue), (EmpleadosComboBox.SelectedValue), (ServicioComboBox.SelectedValue), TiempoNumericUpDown.Value, "NULL", id_ant, fecha_ant, hora_ant, cli_ant, emp_ant, ser_ant, 15, "NULL")
+                    Me.AgendaTableAdapter.Update(FechaDateTimePicker1.Value, New TimeSpan(HoraDateTimePicker.Value.Hour, HoraDateTimePicker.Value.Minute, 0).ToString(), (ClienteComboBox.SelectedValue), (EmpleadosComboBox.SelectedValue), (ServicioComboBox.SelectedValue), TiempoNumericUpDown.Value, "NULL", id_ant)
+
+
 
 
                     Main.ShowMessage("Cambios Guardados", "Se han guardado correctamente los cambios realizados.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
@@ -145,5 +151,16 @@
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
         Consulta.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
+        If Main.ShowMessage("Quitar Cliente", "Se dispone a quitar un cliente del sistema, esta acción no puede ser reversada, desea continuar?", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
+            Try
+                Me.AgendaTableAdapter.Delete(id_ant)
+                Main.LoadScreen(New Calendario(), MoveDirection.BackIn)
+            Catch ex As Exception
+                Main.ShowMessage("Atención!", "Algo no ha salido bien y no se pudo completar la acción solicitada.", Color.FromArgb(20, 184, 56), MsgBoxStyle.OkOnly)
+            End Try
+        End If
     End Sub
 End Class

@@ -70,7 +70,7 @@ Partial Class Calendario
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1040, 786)
+        Me.Panel1.Size = New System.Drawing.Size(983, 762)
         Me.Panel1.TabIndex = 0
         '
         'Panel5
@@ -80,9 +80,9 @@ Partial Class Calendario
         Me.Panel5.Controls.Add(Me.Label_Empleado)
         Me.Panel5.Controls.Add(Me.Label2)
         Me.Panel5.Controls.Add(Me.Horario)
-        Me.Panel5.Location = New System.Drawing.Point(482, 16)
+        Me.Panel5.Location = New System.Drawing.Point(584, 3)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(448, 578)
+        Me.Panel5.Size = New System.Drawing.Size(372, 591)
         Me.Panel5.TabIndex = 4
         Me.Panel5.Tag = ""
         '
@@ -135,18 +135,16 @@ Partial Class Calendario
         Me.Horario.AutoSize = True
         Me.Horario.Location = New System.Drawing.Point(3, 60)
         Me.Horario.Name = "Horario"
-        Me.Horario.Size = New System.Drawing.Size(442, 515)
+        Me.Horario.Size = New System.Drawing.Size(366, 528)
         Me.Horario.TabIndex = 24
         '
         'Panel4
         '
-        Me.Panel4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel4.Controls.Add(Me.EmpleadosDataGridView)
         Me.Panel4.Controls.Add(Me.Label1)
-        Me.Panel4.Location = New System.Drawing.Point(243, 16)
+        Me.Panel4.Location = New System.Drawing.Point(248, 3)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(329, 578)
+        Me.Panel4.Size = New System.Drawing.Size(330, 591)
         Me.Panel4.TabIndex = 3
         '
         'EmpleadosDataGridView
@@ -182,7 +180,7 @@ Partial Class Calendario
         Me.EmpleadosDataGridView.ReadOnly = True
         Me.EmpleadosDataGridView.RowHeadersVisible = False
         Me.EmpleadosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.EmpleadosDataGridView.Size = New System.Drawing.Size(323, 516)
+        Me.EmpleadosDataGridView.Size = New System.Drawing.Size(324, 529)
         Me.EmpleadosDataGridView.TabIndex = 22
         '
         'Id
@@ -225,7 +223,7 @@ Partial Class Calendario
         Me.Panel3.Controls.Add(Me.Label_Agenda)
         Me.Panel3.Controls.Add(Me.Back_Boton)
         Me.Panel3.Controls.Add(Me.MonthCalendar)
-        Me.Panel3.Location = New System.Drawing.Point(3, 3)
+        Me.Panel3.Location = New System.Drawing.Point(6, 3)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(234, 591)
         Me.Panel3.TabIndex = 2
@@ -255,7 +253,7 @@ Partial Class Calendario
         '
         Me.MonthCalendar.CalendarDimensions = New System.Drawing.Size(1, 3)
         Me.MonthCalendar.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.MonthCalendar.Location = New System.Drawing.Point(12, 73)
+        Me.MonthCalendar.Location = New System.Drawing.Point(3, 73)
         Me.MonthCalendar.Name = "MonthCalendar"
         Me.MonthCalendar.TabIndex = 3
         Me.MonthCalendar.TitleBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
@@ -271,7 +269,7 @@ Partial Class Calendario
         Me.Panel2.Controls.Add(Me.CalendarioAddBtn)
         Me.Panel2.Location = New System.Drawing.Point(3, 613)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1020, 104)
+        Me.Panel2.Size = New System.Drawing.Size(969, 104)
         Me.Panel2.TabIndex = 1
         '
         'Button3
@@ -355,7 +353,7 @@ Partial Class Calendario
         Me.CalendarioAddBtn.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.CalendarioAddBtn.Image = Global.StyleSalon.My.Resources.Resources.add
         Me.CalendarioAddBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CalendarioAddBtn.Location = New System.Drawing.Point(941, 0)
+        Me.CalendarioAddBtn.Location = New System.Drawing.Point(890, 0)
         Me.CalendarioAddBtn.Margin = New System.Windows.Forms.Padding(5)
         Me.CalendarioAddBtn.Name = "CalendarioAddBtn"
         Me.CalendarioAddBtn.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -387,7 +385,7 @@ Partial Class Calendario
         'Calendario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(1042, 788)
+        Me.ClientSize = New System.Drawing.Size(985, 764)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Calendario"

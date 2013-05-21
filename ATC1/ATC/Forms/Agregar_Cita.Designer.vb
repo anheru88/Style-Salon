@@ -56,6 +56,7 @@ Partial Class Agregar_Cita
         Me.EmpleadosTableAdapter = New StyleSalon.ATCDataSetTableAdapters.EmpleadosTableAdapter()
         Me.ServiciosTableAdapter = New StyleSalon.ATCDataSetTableAdapters.ServiciosTableAdapter()
         Me.TableAdapterManager = New StyleSalon.ATCDataSetTableAdapters.TableAdapterManager()
+        Me.Button4 = New System.Windows.Forms.Button()
         FechaLabel1 = New System.Windows.Forms.Label()
         IdLabel1 = New System.Windows.Forms.Label()
         ClienteLabel1 = New System.Windows.Forms.Label()
@@ -162,13 +163,14 @@ Partial Class Agregar_Cita
         Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.Button4)
         Me.Panel3.Controls.Add(Me.Button3)
         Me.Panel3.Controls.Add(Me.Button2)
         Me.Panel3.Controls.Add(Me.Button1)
         Me.Panel3.Controls.Add(Me.btnguardar)
         Me.Panel3.Location = New System.Drawing.Point(11, 587)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(932, 108)
+        Me.Panel3.Size = New System.Drawing.Size(963, 108)
         Me.Panel3.TabIndex = 32
         '
         'Button3
@@ -252,7 +254,7 @@ Partial Class Agregar_Cita
         Me.btnguardar.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnguardar.Image = Global.StyleSalon.My.Resources.Resources.save
         Me.btnguardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnguardar.Location = New System.Drawing.Point(853, 0)
+        Me.btnguardar.Location = New System.Drawing.Point(884, 0)
         Me.btnguardar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -303,9 +305,9 @@ Partial Class Agregar_Cita
         Me.Panel2.Controls.Add(Me.FechaDateTimePicker1)
         Me.Panel2.Controls.Add(IdLabel1)
         Me.Panel2.Controls.Add(FechaLabel1)
-        Me.Panel2.Location = New System.Drawing.Point(86, 125)
+        Me.Panel2.Location = New System.Drawing.Point(86, 86)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(857, 457)
+        Me.Panel2.Size = New System.Drawing.Size(888, 457)
         Me.Panel2.TabIndex = 35
         '
         'Label_Mensaje
@@ -331,7 +333,7 @@ Partial Class Agregar_Cita
         Me.HoraDateTimePicker.Location = New System.Drawing.Point(161, 139)
         Me.HoraDateTimePicker.Name = "HoraDateTimePicker"
         Me.HoraDateTimePicker.ShowUpDown = True
-        Me.HoraDateTimePicker.Size = New System.Drawing.Size(618, 35)
+        Me.HoraDateTimePicker.Size = New System.Drawing.Size(649, 35)
         Me.HoraDateTimePicker.TabIndex = 31
         '
         'IdTextBox1
@@ -367,7 +369,7 @@ Partial Class Agregar_Cita
         Me.ServicioComboBox.FormattingEnabled = True
         Me.ServicioComboBox.Location = New System.Drawing.Point(162, 266)
         Me.ServicioComboBox.Name = "ServicioComboBox"
-        Me.ServicioComboBox.Size = New System.Drawing.Size(618, 37)
+        Me.ServicioComboBox.Size = New System.Drawing.Size(649, 37)
         Me.ServicioComboBox.TabIndex = 26
         Me.ServicioComboBox.ValueMember = "Id"
         '
@@ -399,7 +401,7 @@ Partial Class Agregar_Cita
         Me.EmpleadosComboBox.FormattingEnabled = True
         Me.EmpleadosComboBox.Location = New System.Drawing.Point(161, 223)
         Me.EmpleadosComboBox.Name = "EmpleadosComboBox"
-        Me.EmpleadosComboBox.Size = New System.Drawing.Size(618, 37)
+        Me.EmpleadosComboBox.Size = New System.Drawing.Size(649, 37)
         Me.EmpleadosComboBox.TabIndex = 25
         Me.EmpleadosComboBox.ValueMember = "Id"
         '
@@ -421,7 +423,7 @@ Partial Class Agregar_Cita
         Me.ClienteComboBox.FormattingEnabled = True
         Me.ClienteComboBox.Location = New System.Drawing.Point(161, 180)
         Me.ClienteComboBox.Name = "ClienteComboBox"
-        Me.ClienteComboBox.Size = New System.Drawing.Size(618, 37)
+        Me.ClienteComboBox.Size = New System.Drawing.Size(649, 37)
         Me.ClienteComboBox.TabIndex = 24
         Me.ClienteComboBox.ValueMember = "Id"
         '
@@ -439,7 +441,7 @@ Partial Class Agregar_Cita
         Me.FechaDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.FechaDateTimePicker1.Location = New System.Drawing.Point(161, 98)
         Me.FechaDateTimePicker1.Name = "FechaDateTimePicker1"
-        Me.FechaDateTimePicker1.Size = New System.Drawing.Size(618, 35)
+        Me.FechaDateTimePicker1.Size = New System.Drawing.Size(649, 35)
         Me.FechaDateTimePicker1.TabIndex = 16
         '
         'Panel1
@@ -451,7 +453,7 @@ Partial Class Agregar_Cita
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(960, 786)
+        Me.Panel1.Size = New System.Drawing.Size(991, 708)
         Me.Panel1.TabIndex = 0
         '
         'ClientesTableAdapter
@@ -480,10 +482,34 @@ Partial Class Agregar_Cita
         Me.TableAdapterManager.UpdateOrder = StyleSalon.ATCDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button4.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button4.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Button4.Image = Global.StyleSalon.My.Resources.Resources.delete
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button4.Location = New System.Drawing.Point(805, 0)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.Button4.Size = New System.Drawing.Size(79, 108)
+        Me.Button4.TabIndex = 34
+        Me.Button4.Tag = "5"
+        Me.Button4.Text = "Borrar Evento"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button4.UseVisualStyleBackColor = False
+        Me.Button4.Visible = False
+        '
         'Agregar_Cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.ClientSize = New System.Drawing.Size(962, 788)
+        Me.ClientSize = New System.Drawing.Size(993, 710)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Agregar_Cita"
@@ -529,5 +555,6 @@ Partial Class Agregar_Cita
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 
 End Class

@@ -3266,21 +3266,9 @@ Namespace ATCDataSetTableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Agenda] WHERE (([Id] = @Original_Id) AND ([Fecha] = @Original_"& _ 
-                "Fecha) AND ([Hora] = @Original_Hora) AND ([Cliente] = @Original_Cliente) AND ([E"& _ 
-                "mpleado] = @Original_Empleado) AND ([Servicio] = @Original_Servicio) AND ([Tiemp"& _ 
-                "o] = @Original_Tiempo) AND ((@IsNull_Color = 1 AND [Color] IS NULL) OR ([Color] "& _ 
-                "= @Original_Color)))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM Agenda"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Id = @Original_Id)"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Fecha", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Fecha", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Hora", Global.System.Data.SqlDbType.Time, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Hora", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Cliente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Cliente", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Empleado", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Empleado", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Servicio", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Servicio", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Tiempo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Tiempo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Color", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Color", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Color", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Color", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Id", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Agenda] ([Fecha], [Hora], [Cliente], [Empleado], [Servicio], ["& _ 
@@ -3297,32 +3285,18 @@ Namespace ATCDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Color", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Color", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Agenda] SET [Fecha] = @Fecha, [Hora] = @Hora, [Cliente] = @Cliente,"& _ 
-                " [Empleado] = @Empleado, [Servicio] = @Servicio, [Tiempo] = @Tiempo, [Color] = @"& _ 
-                "Color WHERE (([Id] = @Original_Id) AND ([Fecha] = @Original_Fecha) AND ([Hora] ="& _ 
-                " @Original_Hora) AND ([Cliente] = @Original_Cliente) AND ([Empleado] = @Original"& _ 
-                "_Empleado) AND ([Servicio] = @Original_Servicio) AND ([Tiempo] = @Original_Tiemp"& _ 
-                "o) AND ((@IsNull_Color = 1 AND [Color] IS NULL) OR ([Color] = @Original_Color)))"& _ 
-                ";"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id, Fecha, Hora, Cliente, Empleado, Servicio, Tiempo, Color FROM Agend"& _ 
-                "a WHERE (Id = @Id)"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE       Agenda"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SET                Fecha = @fecha, Hora = @hora, Cliente = @"& _ 
+                "cliente, Empleado = @empleado, Servicio = @servicio, Tiempo = @tiempo, Color = @"& _ 
+                "color"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Id = @id_original)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Fecha", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Fecha", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Hora", Global.System.Data.SqlDbType.Time, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Hora", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Cliente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Cliente", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Empleado", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Empleado", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Servicio", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Servicio", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Tiempo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Tiempo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Color", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Color", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Fecha", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Fecha", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Hora", Global.System.Data.SqlDbType.Time, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Hora", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Cliente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Cliente", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Empleado", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Empleado", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Servicio", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Servicio", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Tiempo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Tiempo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Color", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Color", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Color", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Color", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Id", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fecha", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 0, 0, "Fecha", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@hora", Global.System.Data.SqlDbType.Time, 5, Global.System.Data.ParameterDirection.Input, 0, 0, "Hora", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cliente", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "Cliente", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@empleado", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "Empleado", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@servicio", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "Servicio", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@tiempo", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "Tiempo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@color", Global.System.Data.SqlDbType.VarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "Color", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@id_original", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3477,21 +3451,8 @@ Namespace ATCDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Id As Integer, ByVal Original_Fecha As Date, ByVal Original_Hora As System.TimeSpan, ByVal Original_Cliente As Integer, ByVal Original_Empleado As Integer, ByVal Original_Servicio As Integer, ByVal Original_Tiempo As Integer, ByVal Original_Color As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_Id As Integer) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Id,Integer)
-            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_Fecha,Date)
-            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_Hora,System.TimeSpan)
-            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Cliente,Integer)
-            Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_Empleado,Integer)
-            Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_Servicio,Integer)
-            Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_Tiempo,Integer)
-            If (Original_Color Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(8).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_Color,String)
-            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3542,49 +3503,27 @@ Namespace ATCDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update( _
-                    ByVal Fecha As Date,  _
-                    ByVal Hora As System.TimeSpan,  _
-                    ByVal Cliente As Integer,  _
-                    ByVal Empleado As Integer,  _
-                    ByVal Servicio As Integer,  _
-                    ByVal Tiempo As Integer,  _
-                    ByVal Color As String,  _
-                    ByVal Original_Id As Integer,  _
-                    ByVal Original_Fecha As Date,  _
-                    ByVal Original_Hora As System.TimeSpan,  _
-                    ByVal Original_Cliente As Integer,  _
-                    ByVal Original_Empleado As Integer,  _
-                    ByVal Original_Servicio As Integer,  _
-                    ByVal Original_Tiempo As Integer,  _
-                    ByVal Original_Color As String,  _
-                    ByVal Id As Integer) As Integer
-            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Fecha,Date)
-            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Hora,System.TimeSpan)
-            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Cliente,Integer)
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Empleado,Integer)
-            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Servicio,Integer)
-            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Tiempo,Integer)
-            If (Color Is Nothing) Then
+        Public Overloads Overridable Function Update(ByVal fecha As String, ByVal hora As String, ByVal cliente As Integer, ByVal empleado As Integer, ByVal servicio As Integer, ByVal tiempo As Integer, ByVal color As String, ByVal id_original As Integer) As Integer
+            If (fecha Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("fecha")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(fecha,String)
+            End If
+            If (hora Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("hora")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(hora,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(cliente,Integer)
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(empleado,Integer)
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(servicio,Integer)
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(tiempo,Integer)
+            If (color Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Color,String)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(color,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_Id,Integer)
-            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Original_Fecha,Date)
-            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_Hora,System.TimeSpan)
-            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_Cliente,Integer)
-            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_Empleado,Integer)
-            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_Servicio,Integer)
-            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_Tiempo,Integer)
-            If (Original_Color Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_Color,String)
-            End If
-            Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Id,Integer)
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(id_original,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3598,14 +3537,6 @@ Namespace ATCDataSetTableAdapters
                     Me.Adapter.UpdateCommand.Connection.Close
                 End If
             End Try
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Fecha As Date, ByVal Hora As System.TimeSpan, ByVal Cliente As Integer, ByVal Empleado As Integer, ByVal Servicio As Integer, ByVal Tiempo As Integer, ByVal Color As String, ByVal Original_Id As Integer, ByVal Original_Fecha As Date, ByVal Original_Hora As System.TimeSpan, ByVal Original_Cliente As Integer, ByVal Original_Empleado As Integer, ByVal Original_Servicio As Integer, ByVal Original_Tiempo As Integer, ByVal Original_Color As String) As Integer
-            Return Me.Update(Fecha, Hora, Cliente, Empleado, Servicio, Tiempo, Color, Original_Id, Original_Fecha, Original_Hora, Original_Cliente, Original_Empleado, Original_Servicio, Original_Tiempo, Original_Color, Original_Id)
         End Function
     End Class
     
